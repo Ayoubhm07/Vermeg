@@ -1,0 +1,787 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    .chat-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      font-size: 24px;
+      color: #fff;
+      background-color: #007bff;
+      border-radius: 50%;
+      padding: 10px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+
+<head>
+  <style>
+    .user-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .user-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+
+  <head>
+    <style>
+      .user-button {
+        display: block;
+        width: 200px;
+        height: 50px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        font-size: 18px;
+        text-align: center;
+        line-height: 50px;
+        text-decoration: none;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s ease;
+      }
+
+      .user-button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+
+</head>
+
+
+<!--======================================
+        START HEADER AREA
+    ======================================-->
+<header class="header-area bg-white border-bottom border-bottom-gray">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-2">
+        <div class="logo-box">
+          <a href="index.html" class="logo"><img src="assets/images/logo-black.png" alt="logo" width="200px"
+              height="70px"></a>
+          <div class="user-action">
+            <div class="search-menu-toggle icon-element icon-element-xs shadow-sm mr-1" data-toggle="tooltip"
+              data-placement="top" title="Search">
+              <i class="la la-search"></i>
+            </div>
+            <div class="off-canvas-menu-toggle icon-element icon-element-xs shadow-sm mr-1" data-toggle="tooltip"
+              data-placement="top" title="Main menu">
+              <i class="la la-bars"></i>
+            </div>
+            <div class="user-off-canvas-menu-toggle icon-element icon-element-xs shadow-sm" data-toggle="tooltip"
+              data-placement="top" title="User menu">
+              <i class="la la-user"></i>
+            </div>
+          </div>
+        </div>
+      </div><!-- end col-lg-2 -->
+      <div class="col-lg-10">
+        <div class="menu-wrapper border-left border-left-gray pl-4">
+          <nav class="menu-bar mr-auto">
+            <ul>
+              <li>
+                <a href="#">Home <i class="la la-angle-down fs-11"></i></a>
+                <ul class="dropdown-menu-item">
+                  <li><a routerLink="/">Home</a></li>
+                </ul>
+              </li>
+              <li class="is-mega-menu">
+                <a href="#">pages <i class="la la-angle-down fs-11"></i></a>
+                <div class="dropdown-menu-item mega-menu">
+                  <ul class="row">
+                    <li class="col-lg-3">
+                      <a href="http://localhost:4200/user/user-profile">user profile</a>
+                      <a href="http://localhost:4200/user/notification">Notifications</a>
+                      <a href="question/ask-question">ask question</a>
+                      <a href="http://localhost:4200/user/list-user">List users</a>
+                      <a href="http://localhost:4200/question/all-questions">All-question</a>
+                      <a href="setting.html">Settings</a>
+                    </li>
+                    <li class="col-lg-3">
+                      <a href="contact.html">contact</a>
+                      <a href="faq.html">FAQs</a>
+                      <a href="conditions.html">conditions</a>
+                      <a href="privacy-policy.html">privacy policy</a>
+                    </li>
+                    <li class="col-lg-3">
+
+                      <a href="checkout.html">Logout</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">blog <i class="la la-angle-down fs-11"></i></a>
+                <ul class="dropdown-menu-item">
+                  <li><a href="blog-grid-no-sidebar.html">grid no sidebar</a></li>
+                  <li><a href="blog-left-sidebar.html">blog left sidebar</a></li>
+                  <li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
+                  <li><a href="blog-single.html">blog detail</a></li>
+                </ul>
+              </li>
+            </ul><!-- end ul -->
+          </nav><!-- end main-menu -->
+          <form method="post" class="mr-2">
+            <div class="form-group mb-0">
+              <input class="form-control form--control form--control-bg-gray" type="text" name="search"
+                placeholder="Type your search words...">
+            </div>
+          </form>
+          <div class="nav-right-button">
+            <ul class="user-action-wrap d-flex align-items-center">
+              <li class="dropdown">
+                <span class="ball red ball-lg noti-dot"></span>
+                <a class="nav-link dropdown-toggle dropdown--toggle" routerLink="user/notification"
+                  id="notificationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <i class="la la-bell"></i>
+                </a>
+                <div class="dropdown-menu dropdown--menu dropdown-menu-right mt-3 keep-open"
+                  aria-labelledby="notificationDropdown">
+                  <h6 class="dropdown-header"><i class="la la-bell pr-1 fs-16"></i>Notifications</h6>
+                  <div class="dropdown-divider border-top-gray mb-0"></div>
+                  <div class="dropdown-item-list">
+                    <a class="dropdown-item" href="notifications.html">
+                      <div
+                        class="media media-card media--card shadow-none mb-0 rounded-0 align-items-center bg-transparent">
+                        <div class="media-img media-img-sm flex-shrink-0">
+                          <img src="assets/images/img3.jpg" alt="avatar">
+                        </div>
+                        <div class="media-body p-0 border-left-0">
+                          <h5 class="fs-14 fw-regular">Khaoula Doe following your post</h5>
+                          <small class="meta d-block lh-24">
+                            <span>45 secs ago</span>
+                          </small>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="dropdown-item" href="notifications.html">
+                      <div
+                        class="media media-card media--card shadow-none mb-0 rounded-0 align-items-center bg-transparent">
+                        <div class="media-img media-img-sm flex-shrink-0">
+                          <img src="assets/images/imgW.jpg" alt="avatar">
+                        </div>
+                        <div class="media-body p-0 border-left-0">
+                          <h5 class="fs-14 fw-regular">Arnold Smith answered on your post</h5>
+                          <small class="meta d-block lh-24">
+                            <span>5 mins ago</span>
+                          </small>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="dropdown-item" href="notifications.html">
+                      <div
+                        class="media media-card media--card shadow-none mb-0 rounded-0 align-items-center bg-transparent">
+                        <div class="media-img media-img-sm flex-shrink-0">
+                          <img src="assets/images/imgK.jpg" alt="avatar">
+                        </div>
+                        <div class="media-body p-0 border-left-0">
+                          <h5 class="fs-14 fw-regular">Saeed bookmarked your post</h5>
+                          <small class="meta d-block lh-24">
+                            <span>6 hour ago</span>
+                          </small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <a href="http://localhost:4200/user/notification"
+                    class="dropdown-item pb-1 border-bottom-0 text-center btn-text fw-regular"
+                    href="notifications.html">View All Notifications <i class="la la-arrow-right icon ml-1"></i></a>
+                </div>
+              </li>
+              <li class="dropdown user-dropdown">
+                <a class="nav-link dropdown-toggle dropdown--toggle pl-2" href="#" id="userMenuDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <div
+                    class="media media-card media--card shadow-none mb-0 rounded-0 align-items-center bg-transparent">
+                    <div class="user-avatar media-img media-img-xs flex-shrink-0 rounded-full mr-2">
+                      {{ getFirstLetter(userName!) }}
+                    </div>
+                    <div class="media-body p-0 border-left-0">
+                      <h5 class="fs-14">{{userName}}</h5>
+                    </div>
+                    <a (click)="logout()" style="
+                    font-size: small;
+                    /* margin-right: -15rem; */
+                    margin-left: 2rem;">Logout</a>
+                  </div>
+
+                </a>
+
+              </li>
+            </ul>
+          </div><!-- end nav-right-button -->
+        </div><!-- end menu-wrapper -->
+      </div><!-- end col-lg-10 -->
+    </div><!-- end row -->
+  </div><!-- end container -->
+  <div class="off-canvas-menu custom-scrollbar-styled">
+    <div class="off-canvas-menu-close icon-element icon-element-sm shadow-sm" data-toggle="tooltip"
+      data-placement="left" title="Close menu">
+      <i class="la la-times"></i>
+    </div><!-- end off-canvas-menu-close -->
+    <ul class="generic-list-item off-canvas-menu-list pt-90px">
+      <li>
+        <a href="#">Home</a>
+        <ul class="sub-menu">
+          <li><a href="index.html">Home - landing</a></li>
+          <li><a href="home-2.html">Home - main</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Pages</a>
+        <ul class="sub-menu">
+          <li><a href="user-profile.html">user profile</a></li>
+          <li><a href="notifications.html">Notifications</a></li>
+          <li><a href="referrals.html">Referrals</a></li>
+          <li><a href="setting.html">settings</a></li>
+          <li><a routerLink="question/ask-question">ask question</a></li>
+          <li><a href="question-details.html">question details</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="revisions.html">revisions</a></li>
+          <li><a href="category.html">category</a></li>
+          <li><a href="companies.html">companies</a></li>
+          <li><a href="company-details.html">company details</a></li>
+          <li><a href="careers.html">careers</a></li>
+          <li><a href="career-details.html">career details</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="pricing-table.html">pricing tables</a></li>
+          <li><a href="error.html">page 404</a></li>
+          <li><a href="terms-and-conditions.html">Terms & conditions</a></li>
+          <li><a href="privacy-policy.html">privacy policy</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">blog</a>
+        <ul class="sub-menu">
+          <li><a href="blog-grid-no-sidebar.html">grid no sidebar</a></li>
+          <li><a href="blog-left-sidebar.html">blog left sidebar</a></li>
+          <li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
+          <li><a href="blog-single.html">blog detail</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="off-canvas-btn-box px-4 pt-5 text-center">
+      <a href="login.html" class="btn theme-btn theme-btn-sm theme-btn-outline"><i class="la la-sign-in mr-1"></i>
+        Login</a>
+      <span class="fs-15 fw-medium d-inline-block mx-2">Or</span>
+      <a href="signup.html" class="btn theme-btn theme-btn-sm"><i class="la la-plus mr-1"></i> Sign up</a>
+    </div>
+  </div><!-- end off-canvas-menu -->
+  <div class="user-off-canvas-menu custom-scrollbar-styled">
+    <div class="user-off-canvas-menu-close icon-element icon-element-sm shadow-sm" data-toggle="tooltip"
+      data-placement="left" title="Close menu">
+      <i class="la la-times"></i>
+    </div><!-- end user-off-canvas-menu-close -->
+    <ul class="nav nav-tabs generic-tabs generic--tabs pt-90px pl-4 shadow-sm" id="myTab2" role="tablist">
+      <li class="nav-item">
+        <div class="anim-bar"></div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" id="user-notification-menu-tab" data-toggle="tab" href="#user-notification-menu"
+          role="tab" aria-controls="user-notification-menu" aria-selected="true">Notifications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="user-profile-menu-tab" data-toggle="tab" href="#user-profile-menu" role="tab"
+          aria-controls="user-profile-menu" aria-selected="false">Profile</a>
+      </li>
+    </ul>
+    <div class="tab-content pt-3" id="myTabContent2">
+      <div class="tab-pane fade show active" id="user-notification-menu" role="tabpanel"
+        aria-labelledby="user-notification-menu-tab">
+        <div class="dropdown--menu shadow-none w-auto rounded-0">
+          <div class="dropdown-item-list">
+            <a class="dropdown-item" href="notifications.html">
+              <div class="media media-card media--card shadow-none mb-0 rounded-0 align-items-center bg-transparent">
+                <div class="media-img media-img-sm flex-shrink-0">
+                  <img src="assets/images/img3.jpg" alt="avatar">
+                </div>
+                <div class="media-body p-0 border-left-0">
+                  <h5 class="fs-14 fw-regular">Arnold Smith following your post</h5>
+                  <small class="meta d-block lh-24">
+                    <span>45 secs ago</span>
+                  </small>
+                </div>
+              </div>
+            </a>
+            <a class="dropdown-item" href="notifications.html">
+              <div class="media media-card media--card shadow-none mb-0 rounded-0 align-items-center bg-transparent">
+                <div class="media-img media-img-sm flex-shrink-0">
+                  <img src="assets/images/imgA.jpg" alt="avatar">
+                </div>
+                <div class="media-body p-0 border-left-0">
+                  <h5 class="fs-14 fw-regular">Bouzidi aljia answered on your post</h5>
+                  <small class="meta d-block lh-24">
+                    <span>5 mins ago</span>
+                  </small>
+                </div>
+              </div>
+            </a>
+            <a class="dropdown-item" href="notifications.html">
+              <div class="media media-card media--card shadow-none mb-0 rounded-0 align-items-center bg-transparent">
+                <div class="media-img media-img-sm flex-shrink-0">
+                  <img src="assets/images/imgK.jpg" alt="avatar">
+                </div>
+                <div class="media-body p-0 border-left-0">
+                  <h5 class="fs-14 fw-regular">Hamza khaoula bookmarked your post</h5>
+                  <small class="meta d-block lh-24">
+                    <span>6 hour ago</span>
+                  </small>
+                </div>
+              </div>
+            </a>
+          </div>
+          <a href="http://localhost:4200/user/notification"
+            class="dropdown-item border-bottom-0 text-center btn-text fw-regular" href="notifications.html">View All
+            Notifications <i class="la la-arrow-right icon ml-1"></i></a>
+        </div>
+      </div><!-- end tab-pane -->
+      <div class="tab-pane fade" id="user-profile-menu" role="tabpanel" aria-labelledby="user-profile-menu-tab">
+        <div class="dropdown--menu shadow-none w-auto rounded-0">
+          <div class="dropdown-item-list">
+            <a class="dropdown-item" href="user-profile.html"><i class="la la-user mr-2"></i>Profile</a>
+            <a class="dropdown-item" href="notifications.html"><i class="la la-bell mr-2"></i>Notifications</a>
+            <a class="dropdown-item" href="referrals.html"><i class="la la-user-plus mr-2"></i>Referrals</a>
+            <a class="dropdown-item" href="setting.html"><i class="la la-gear mr-2"></i>Settings</a>
+            <a class="dropdown-item" href="index.html"><i class="la la-power-off mr-2"></i>Log out</a>
+          </div>
+        </div>
+      </div><!-- end tab-pane -->
+    </div>
+  </div><!-- end user-off-canvas-menu -->
+  <div class="mobile-search-form">
+    <div class="d-flex align-items-center">
+      <form method="post" class="mr-4">
+        <div class="form-group mb-0">
+          <input class="form-control form--control form--control-bg-gray" type="text" name="search"
+            placeholder="Type your search words...">
+          <button class="form-btn" type="button"><i class="la la-search"></i></button>
+        </div>
+      </form>
+      <div class="search-bar-close icon-element icon-element-sm shadow-sm">
+        <i class="la la-times"></i>
+      </div><!-- end off-canvas-menu-close -->
+    </div>
+  </div><!-- end mobile-search-form -->
+  <div class="body-overlay"></div>
+</header><!-- end header-area -->
+<!-- ================================
+         START QUESTION AREA
+================================= -->
+<section class="question-area pt-40px pb-40px">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="question-main-bar mb-50px">
+          <div class="question-highlight">
+            <div class="media media-card shadow-none rounded-0 mb-0 bg-transparent p-0">
+              <div class="media-body">
+                <a href="http://localhost:4200/question/chat" class="chat-icon"><i class="fas fa-comments"></i></a>
+                <h5 class="fs-20"><a href="question-details.html">Question Details</a></h5>
+                <div class="meta d-flex flex-wrap align-items-center fs-13 lh-20 py-1">
+                  <div class="pr-3">
+                    <span>Asked </span>
+                    <span class="text-black">{{time}}</span>
+                  </div>
+
+
+                  <div class="pr-3">
+                    <span class="pr-1">Votes</span>
+                    <span class="text-black">35</span>
+                  </div>
+                </div>
+                <div class="tags">
+                  <ng-container *ngFor="let keyword of question?.domain">
+                    <a href="javascript:void(0)" class="tag-link">{{keyword}}</a>
+                  </ng-container>
+                </div>
+              </div>
+            </div><!-- end media -->
+          </div><!-- end question-highlight -->
+          <div class="question d-flex">
+            <div class="votes votes-styled w-auto">
+              <div id="vote" class="upvotejs">
+                <a class="upvote upvote-on" data-toggle="tooltip" data-placement="right"
+                  title="This question is useful"></a>
+                <span class="count">1</span>
+                <a class="downvote" data-toggle="tooltip" data-placement="right"
+                  title="This question is not useful"></a>
+                <a class="star" data-toggle="tooltip" data-placement="right" title="Bookmark this question."></a>
+              </div>
+            </div><!-- end votes -->
+            <div class="question-post-body-wrap flex-grow-1">
+              <!-- end question-post-body -->
+              <div class="question-post-user-action">
+                <div class="post-menu">
+                  <div class="btn-group">
+                    <div class="dropdown-menu dropdown--menu dropdown--menu-2 mt-2" aria-labelledby="shareDropdownMenu">
+                      <div class="py-3 px-4">
+                        <h4 class="fs-15 pb-2">Share a link to this question</h4>
+                        <form action="#" class="copy-to-clipboard">
+                          <span class="text-success-message">Link Copied!</span>
+                          <input type="text" class="form-control form--control form-control-sm copy-input"
+                            value="https://Disilab.com/q/66552850/15319675">
+                          <div class="btn-box pt-2 d-flex align-items-center justify-content-between">
+                            <a href="#" class="btn-text copy-btn">Copy link</a>
+                            <ul class="social-icons social-icons-sm">
+                              <li><a href="#" class="bg-8 text-white shadow-none"
+                                  title="Share link to this question on Facebook"><i class="la la-facebook"></i></a>
+                              </li>
+                              <li><a href="#" class="bg-9 text-white shadow-none"
+                                  title="Share link to this question on Twitter"><i class="la la-twitter"></i></a></li>
+                              <li><a href="#" class="bg-dark text-white shadow-none"
+                                  title="Share link to this question on DEV"><i class="lab la-dev"></i></a></li>
+                            </ul>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div><!-- btn-group -->
+                  <button class="btn">Follow</button>
+
+                </div><!-- end post-menu -->
+                <div class="media media-card user-media owner align-items-center">
+                  <div class="user-avatar media-img media-img-xs flex-shrink-0 rounded-full mr-2">
+                      {{ getFirstLetter("Macha") }}
+                  </div>
+                  <h5 class="mb-0">Macha</h5>
+                </div>
+                <div class="question-details">
+                  <p class="text-muted mb-2 description">{{ question?.descripition }}</p> <!-- Utilisation de la classe 'description' -->
+                  <div class="question-date text-left">
+                      <span class="text-muted d-block">Asked:</span>
+                      <span class="d-block">{{ question?.date | date:'medium' }}</span> <!-- Formatage de la date -->
+                  </div>
+              </div>
+
+
+              <!-- end media -->
+
+              </div><!-- end question-post-user-action -->
+              <div class="comments-wrap">
+                <div class="comment-form">
+                  <div class="comment-link-wrap text-center">
+                    <a class="collapse-btn comment-link" data-toggle="collapse" href="#addCommentCollapseTwo"
+                      role="button" aria-expanded="false" aria-controls="addCommentCollapseTwo"
+                      title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments.">Add
+                      an answer</a>
+                  </div>
+                  <div class="collapse border-top border-top-gray mt-2 pt-3" id="addCommentCollapseTwo">
+                    <form method="post" class="row pb-3">
+                      <div class="col-lg-12">
+                        <h4 class="fs-16 pb-2">Leave a Comment</h4>
+                        <div class="divider mb-2"><span></span></div>
+                      </div><!-- end col-lg-12 -->
+                      <div class="col-lg-6">
+                        <div class="input-box">
+                          <label class="fs-13 text-black lh-20">Name</label>
+                          <div class="form-group">
+                            <input class="form-control form--control form-control-sm fs-13" type="text" name="text"
+                              placeholder="Your name">
+                          </div>
+                        </div>
+                      </div><!-- end col-lg-6 -->
+                      <div class="col-lg-6">
+                        <div class="input-box">
+                          <label class="fs-13 text-black lh-20">Email (Address never made public)</label>
+                          <div class="form-group">
+                            <input class="form-control form--control form-control-sm fs-13" type="text" name="text"
+                              placeholder="Your email">
+                          </div>
+                        </div>
+                      </div><!-- end col-lg-6 -->
+                      <div class="col-lg-12">
+                        <div class="input-box">
+                          <label class="fs-13 text-black lh-20">Website</label>
+                          <div class="form-group">
+                            <input class="form-control form--control form-control-sm fs-13" type="text" name="text"
+                              placeholder="Website link">
+                          </div>
+                        </div>
+                      </div><!-- end col-lg-12 -->
+                      <div class="col-lg-12">
+                        <div class="input-box">
+                          <label class="fs-13 text-black lh-20">Message</label>
+                          <div class="form-group">
+                            <textarea class="form-control form--control form-control-sm fs-13" name="message" rows="5"
+                              placeholder="Your comment here..."></textarea>
+                            <div class="d-flex flex-wrap align-items-center pt-2">
+                              <div class="badge bg-gray border border-gray mr-3 fw-regular fs-13">[named hyperlinks]
+                                (https://example.com)</div>
+                              <div class="mr-3 fw-bold fs-13">**bold**</div>
+                              <div class="mr-3 font-italic fs-13">_italic_</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- end col-lg-12 -->
+                      <div class="col-lg-12">
+                        <div class="input-box d-flex flex-wrap align-items-center justify-content-between">
+                          <div>
+                            <div class="custom-control custom-checkbox fs-13">
+                              <input type="checkbox" class="custom-control-input" id="getNewCommentsTwo">
+                              <label class="custom-control-label custom--control-label" for="getNewCommentsTwo">Notify
+                                me of new comments vai email.</label>
+                            </div>
+                            <div class="custom-control custom-checkbox fs-13">
+                              <input type="checkbox" class="custom-control-input" id="getNewPostsTwo">
+                              <label class="custom-control-label custom--control-label" for="getNewPostsTwo">Notify me
+                                of new posts vai email.</label>
+                            </div>
+                          </div>
+                          <button class="btn theme-btn theme-btn-sm theme-btn-outline theme-btn-outline-gray"
+                            type="submit">Post Comment</button>
+                        </div>
+                      </div><!-- end col-lg-12 -->
+                    </form>
+                  </div><!-- end collapse -->
+                </div>
+              </div><!-- end comments-wrap -->
+            </div><!-- end answer-body-wrap -->
+          </div><!-- end answer-wrap -->
+          <div class="subheader">
+            <div class="subheader-title">
+              <h3 class="fs-16">Your Answer</h3>
+            </div>
+          </div>
+          <div class="post-form">
+            <form [formGroup]="answerForm" (ngSubmit)="addAnswer()" class="pt-3">
+              <div class="input-box">
+                <label class="fs-14 text-black lh-20 fw-medium">Body</label>
+                <div class="form-group">
+                  <textarea class="form-control form--control form-control-sm fs-13 user-text-editor"
+                    formControlName="content" rows="6"
+                    placeholder="Your answer here..."></textarea>
+                </div>
+              </div>
+              <button class="btn theme-btn theme-btn-sm" type="submit">Post Your Answer</button>
+            </form>
+          </div>
+        </div><!-- end question-main-bar -->
+      </div><!-- end col-lg-9 -->
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <div class="card card-item">
+            <div class="card-body">
+              <h3 class="fs-17 pb-3">Number Achievement</h3>
+              <div class="divider"><span></span></div>
+              <div class="row no-gutters text-center">
+                <div class="col-lg-6 responsive-column-half">
+                  <div class="icon-box pt-3">
+                    <span class="fs-20 fw-bold text-color">98</span>
+                    <p class="fs-14">Questions</p>
+                  </div><!-- end icon-box -->
+                </div><!-- end col-lg-6 -->
+                <div class="col-lg-6 responsive-column-half">
+                  <div class="icon-box pt-3">
+                    <span class="fs-20 fw-bold text-color-2">52</span>
+                    <p class="fs-14">Answers</p>
+                  </div><!-- end icon-box -->
+                </div><!-- end col-lg-6 -->
+                <div class="col-lg-6 responsive-column-half">
+                  <div class="icon-box pt-3">
+                    <span class="fs-20 fw-bold text-color-3">37</span>
+                    <p class="fs-14">Answer accepted</p>
+                  </div><!-- end icon-box -->
+                </div><!-- end col-lg-6 -->
+                <div class="col-lg-6 responsive-column-half">
+                  <div class="icon-box pt-3">
+                    <span class="fs-20 fw-bold text-color-4">32</span>
+                    <p class="fs-14">Users</p>
+                  </div><!-- end icon-box -->
+                </div><!-- end col-lg-6 -->
+
+              </div><!-- end row -->
+            </div>
+          </div><!-- end card -->
+          <div class="card card-item">
+            <div class="card-body">
+              <div class="d-flex align-items-center pb-3">
+                <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="#6c727c">
+                  <path
+                    d="M1 6l8 5 8-5V4L9 9 1 4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v10c0 1.09-.91 2-2 2H3c-1.09 0-2-.91-2-2V6z">
+                  </path>
+                </svg>
+                <h3 class="fs-17">Love this site?</h3>
+              </div>
+              <div class="divider"><span></span></div>
+              <p class="fs-14 lh-20 py-3">Get the <span class="text-dark fw-medium">weekly newsletter!</span> In it,
+                you'll get:</p>
+              <ul class="generic-list-item generic-list-item-bullet fs-14 pb-3">
+                <li class="lh-20">The week's top questions and answers</li>
+                <li class="lh-20">Questions that need answers</li>
+              </ul>
+
+            </div>
+          </div><!-- end card -->
+          <div class="card card-item">
+            <div class="card-body">
+              <h3 class="fs-17 pb-3">Trending Tags</h3>
+              <div class="divider"><span></span></div>
+              <div class="tags pt-4">
+                <div class="tag-item">
+                  <a href="#" class="tag-link tag-link-md">Spring Boot</a>
+                  <span class="item-multiplier fs-13">
+                  </span>
+                </div><!-- end tag-item -->
+                <div class="tag-item">
+                  <a href="#" class="tag-link tag-link-md">Angular</a>
+                  <span class="item-multiplier fs-13">
+
+                  </span>
+                </div><!-- end tag-item -->
+                <div class="tag-item">
+                  <a href="#" class="tag-link tag-link-md">python</a>
+                  <span class="item-multiplier fs-13">
+                  </span>
+                </div><!-- end tag-item -->
+                <div class="tag-item">
+                  <a href="#" class="tag-link tag-link-md">TypeScript</a>
+                  <span class="item-multiplier fs-13">
+                  </span>
+                </div><!-- end tag-item -->
+                <div class="tag-item">
+                  <a href="#" class="tag-link tag-link-md">c++</a>
+                  <span class="item-multiplier fs-13">
+                  </span>
+                </div><!-- end tag-item -->
+                <div class="collapse" id="showMoreTags">
+                  <div class="tag-item">
+                    <a href="#" class="tag-link tag-link-md">java</a>
+                    <span class="item-multiplier fs-13">
+                      <span>×</span>
+                      <span>32924</span>
+                    </span>
+                  </div><!-- end tag-item -->
+                  <div class="tag-item">
+                    <a href="#" class="tag-link tag-link-md">swift</a>
+                    <span class="item-multiplier fs-13">
+                      <span>×</span>
+                      <span>32924</span>
+                    </span>
+                  </div><!-- end tag-item -->
+                  <div class="tag-item">
+                    <a href="#" class="tag-link tag-link-md">html</a>
+                    <span class="item-multiplier fs-13">
+                      <span>×</span>
+                      <span>32924</span>
+                    </span>
+                  </div><!-- end tag-item -->
+                  <div class="tag-item">
+                    <a href="#" class="tag-link tag-link-md">angular</a>
+                    <span class="item-multiplier fs-13">
+                      <span>×</span>
+                      <span>32924</span>
+                    </span>
+                  </div><!-- end tag-item -->
+                  <div class="tag-item">
+                    <a href="#" class="tag-link tag-link-md">flutter</a>
+                    <span class="item-multiplier fs-13">
+                      <span>×</span>
+                      <span>32924</span>
+                    </span>
+                  </div><!-- end tag-item -->
+                  <div class="tag-item">
+                    <a href="#" class="tag-link tag-link-md">machine-language</a>
+                    <span class="item-multiplier fs-13">
+                      <span>×</span>
+                      <span>32924</span>
+                    </span>
+                  </div><!-- end tag-item -->
+                </div><!-- end collapse -->
+                <a class="collapse-btn fs-13" data-toggle="collapse" href="#showMoreTags" role="button"
+                  aria-expanded="false" aria-controls="showMoreTags">
+                  <span class="collapse-btn-hide">Show more<i class="la la-angle-down ml-1 fs-11"></i></span>
+                  <span class="collapse-btn-show">Show less<i class="la la-angle-up ml-1 fs-11"></i></span>
+                </a>
+              </div>
+            </div>
+          </div><!-- end card -->
+          <div class="ad-card">
+            <h4 class="text-gray text-uppercase fs-13 pb-3 text-center">Advertisements</h4>
+            <div class="ad-banner mb-4 mx-auto">
+            </div>
+          </div><!-- end ad-card -->
+        </div><!-- end sidebar -->
+      </div>
+    </div><!-- end comments-wrap -->
+  </div><!-- end question-post-body-wrap -->
+
+</section><!-- end question-area -->
+<!-- ================================
+        END HEADER AREA
+======================================-->
+<!--======================================
+        START HERO AREA
+======================================-->
+<!--======================================
+        END HERO AREA
+======================================-->
+
+<!-- ================================
+         END FOOTER AREA
+================================= -->
+<section class="footer-area pt-20px bg-dark position-relative">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-3 responsive-column-half">
+        <div class="footer-item">
+          <h3 class="fs-18 fw-bold pb-2 text-white">Legal Stuff</h3>
+          <ul class="generic-list-item generic-list-item-hover-underline pt-3 generic-list-item-white">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-and-conditions.html">Terms of Service</a></li>
+            <li><a href="privacy-policy.html">Cookie Policy</a></li>
+          </ul>
+        </div><!-- end footer-item -->
+      </div><!-- end col-lg-3 -->
+      <div class="col-lg-3 responsive-column-half">
+        <div class="footer-item">
+          <h3 class="fs-18 fw-bold pb-2 text-white">Help</h3>
+          <ul class="generic-list-item generic-list-item-hover-underline pt-3 generic-list-item-white">
+            <li><a href="faq.html">Knowledge Base</a></li>
+            <li><a href="contact.html">Support</a></li>
+          </ul>
+        </div><!-- end footer-item -->
+      </div><!-- end col-lg-3 -->
+      <div class="col-lg-3 responsive-column-half">
+        <div class="footer-item">
+          <h3 class="fs-18 fw-bold pb-2 text-white">Connect with us</h3>
+          <ul class="generic-list-item generic-list-item-hover-underline pt-3 generic-list-item-white">
+            <li><a href="#"><i class="la la-facebook mr-1"></i> Facebook</a></li>
+            <li><a href="#"><i class="la la-twitter mr-1"></i> Twitter</a></li>
+            <li><a href="#"><i class="la la-linkedin mr-1"></i> LinkedIn</a></li>
+            <li><a href="#"><i class="la la-instagram mr-1"></i> Instagram</a></li>
+          </ul>
+        </div><!-- end footer-item -->
+      </div><!-- end col-lg-3 -->
+    </div><!-- end row -->
+  </div><!-- end container -->
+  <hr class="border-top-gray my-5">
+  <div class="container">
+    <div class="row align-items-center pb-4 copyright-wrap">
+      <div class="col-lg-6">
+        <a href="index.html" class="d-inline-block">
+          <img src="assets/images/logo-black.png" alt="footer logo" class=" Logos footer-logo">
+        </a>
+      </div><!-- end col-lg-6 -->
+      <div class="col-lg-6">
+      </div><!-- end col-lg-6 -->
+    </div><!-- end row -->
+  </div><!-- end container -->
+</section><!-- end footer-area -->
+<!-- ================================
+          END FOOTER AREA
+================================= -->

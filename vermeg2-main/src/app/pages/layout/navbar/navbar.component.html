@@ -1,0 +1,711 @@
+<!--======================================
+        START HEADER AREA
+======================================-->
+<header class="header-area bg-dark">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-2">
+                <div class="logo-box">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo-black.png" alt="logo" width="220px" height="100px">
+                    </a>
+                </div>
+            </div><!-- end col-lg-2 -->  
+            <div class="col-lg-8">
+                <div class="menu-wrapper">
+                    <nav class="menu-bar" [ngClass]="{'expanded': !isExpanded, 'collapsed': isExpanded}" [attr.aria-expanded]="!isExpanded">
+                        <ul>
+                            <li>
+                                <a href="#">Home <i class="la la-angle-down fs-11"></i></a>
+                                <ul class="dropdown-menu-item">
+                                    <li><a href="index.html">Home - landing</a></li>
+                                    <li><a href="home-2.html">Home - main</a></li>
+                                    <li><a href="home-3.html">Home - layout 2 <span class="badge bg-warning text-white">New</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="is-mega-menu">
+                                <a href="#">pages <i class="la la-angle-down fs-11"></i></a>
+                                <div class="dropdown-menu-item mega-menu">
+                                    <ul class="row">
+                                        <li class="col-lg-3">
+                                            <a href="user-profile.html">user profile</a>
+                                            <a href="notifications.html">Notifications</a>
+                                            <a href="referrals.html">Referrals</a>
+                                            <a href="setting.html">settings</a>
+                                            <a href="question/ask-question">ask question</a>
+                                            <a href="question/all-questions">all questions</a>
+                                            <a href="question-details.html">question details</a>
+                                            <a href="about.html">about</a>
+                                            <a href="revisions.html">revisions</a>
+                                            <a href="category.html">category</a>
+                                            <a href="companies.html">companies</a>
+                                            <a href="company-details.html">company details</a>
+                                        </li>
+                                        <li class="col-lg-3">
+                                            <a href="careers.html">careers</a>
+                                            <a href="career-details.html">career details</a>
+                                            <a href="contact.html">contact</a>
+                                            <a href="faq.html">FAQs</a>
+                                            <a href="pricing-table.html">pricing tables</a>
+                                            <a href="error.html">page 404</a>
+                                            <a href="terms-and-conditions.html">Terms & conditions</a>
+                                            <a href="privacy-policy.html">privacy policy</a>
+                                            <a href="cart.html">cart</a>
+                                            <a href="talent.html">talent</a>
+                                            <a href="advertising.html">advertising</a>
+                                        </li>
+                                        <li class="col-lg-3">
+                                            <a href="free-demo.html">free demo</a>
+                                            <a href="checkout.html">checkout</a>
+                                            <a href="wishlist.html">wishlist</a>
+                                            <a href="login.html">login</a>
+                                            <a href="login-2.html">login 2</a>
+                                            <a href="signup.html">sign up</a>
+                                            <a href="signup-2.html">sign up 2</a>
+                                            <a href="recover-password.html">recover password</a>
+                                            <a href="questions-layout-2.html">questions layout 2 <span class="badge bg-warning text-white">New</span></a>
+                                            <a href="questions-full-width.html">questions full-width <span class="badge bg-warning text-white">New</span></a>
+                                            <a href="questions-left-sidebar.html">questions left sidebar <span class="badge bg-warning text-white">New</span></a>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">blog <i class="la la-angle-down fs-11"></i></a>
+                                <ul class="dropdown-menu-item">
+                                    <li><a href="blog-grid-no-sidebar.html">grid no sidebar</a></li>
+                                    <li><a href="blog-left-sidebar.html">blog left sidebar</a></li>
+                                    <li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
+                                    <li><a href="blog-single.html">blog detail</a></li>
+                                </ul>
+                            </li>
+                        </ul><!-- end ul -->
+                    </nav>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="nav-right-button d-flex justify-content-end">
+                    <a routerLink="auth/sign-in" class="btn theme-btn theme-btn-outline theme-btn-outline-white mr-2">
+                        <i class="la la-sign-in mr-1"></i> Login
+                    </a>
+                    <a routerLink="auth/sign-up" class="btn theme-btn theme-btn-white">
+                        <i class="la la-user mr-1"></i> Sign up
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ...other HTML parts... -->
+</header><!-- end header-area -->
+
+
+  <!--======================================
+          END HEADER AREA
+  ======================================-->
+  
+
+
+<!--======================================
+       START HERO AREA
+======================================-->
+<section class="hero-area bg-dark overflow-hidden section-padding">
+  <span class="stroke-shape stroke-shape-1 stroke-shape-white"></span>
+  <span class="stroke-shape stroke-shape-2 stroke-shape-white"></span>
+  <span class="stroke-shape stroke-shape-3 stroke-shape-white"></span>
+  <span class="stroke-shape stroke-shape-4 stroke-shape-white"></span>
+  <span class="stroke-shape stroke-shape-5 stroke-shape-white"></span>
+  <span class="stroke-shape stroke-shape-6 stroke-shape-white"></span>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mr-auto">
+        <div class="hero-content">
+          <h2 class="section-title fs-50 pb-3 text-white lh-65">Join the largest Q&A network in the world!</h2>
+          <p class="lh-26 text-white">This is a private space for teams.</p>
+          <div class="hero-btn-box pt-30px">
+            <a href="#for-developers" class="btn theme-btn mr-2 page-scroll">For developers <i class="la la-angle-down icon ml-1"></i></a>
+            <a href="#for-businesses" class="btn theme-btn bg-3 page-scroll">For businesses <i class="la la-angle-down icon ml-1"></i></a>
+          </div>
+        </div><!-- end hero-content -->
+      </div><!-- end col-lg-6 -->
+    </div><!-- end row -->
+  </div><!-- end container -->
+  <div class="generic-img-box generic-img-box-layout-2">
+
+    <img class="lazy" src="assets/images/15.png" data-src="assets/images/15.png" alt="image"  width= "600" height="300px">
+  </div>
+</section>
+<!--======================================
+        END HERO AREA
+======================================-->
+
+
+<!-- ================================
+         START FUNFACT AREA
+================================= -->
+<section class="funfact-area">
+    <div class="container">
+        <div class="counter-box bg-white shadow-md rounded-rounded px-4">
+            <div class="row">
+                <div class="col responsive-column-half border-right border-right-gray">
+                    <div class="media media-card text-center px-0 py-4 shadow-none rounded-0 bg-transparent counter-item mb-0">
+                        <div class="media-body">
+                            <h5 class="fw-semi-bold pb-2">80+ million</h5>
+                            <p class="lh-20">Monthly visitors to our network</p>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+                <div class="col responsive-column-half border-right border-right-gray">
+                    <div class="media media-card text-center px-0 py-4 shadow-none rounded-0 bg-transparent counter-item mb-0">
+                        <div class="media-body">
+                            <h5 class="fw-semi-bold pb-2">25+ Million</h5>
+                            <p class="lh-20">Questions asked to-date</p>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+                <div class="col responsive-column-half border-right border-right-gray">
+                    <div class="media media-card text-center px-0 py-4 shadow-none rounded-0 bg-transparent counter-item mb-0">
+                        <div class="media-body">
+                            <h5 class="fw-semi-bold pb-2">14.7 seconds</h5>
+                            <p class="lh-20">Average time between new questions</p>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+                <div class="col responsive-column-half border-right border-right-gray">
+                    <div class="media media-card text-center px-0 py-4 shadow-none rounded-0 bg-transparent counter-item mb-0">
+                        <div class="media-body">
+                            <h5 class="fw-semi-bold pb-2">40+ Billion</h5>
+                            <p class="lh-20">Times a developer got help</p>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+                <div class="col responsive-column-half">
+                    <div class="media media-card text-center px-0 py-4 shadow-none rounded-0 bg-transparent counter-item mb-0">
+                        <div class="media-body">
+                            <h5 class="fw-semi-bold pb-2">10,000+</h5>
+                            <p class="lh-20">Customer companies for all products</p>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end counter-box -->
+    </div><!-- end container -->
+</section><!-- end funfact-area -->
+<!-- ================================
+         END FUNFACT AREA
+================================= -->
+
+<!-- ================================
+         START GET START AREA
+================================= -->
+<section class="get-started-area section--padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 responsive-column-half">
+                <div class="media media-card align-items-center">
+                    <div class="icon-element icon-element-lg mr-4 shadow-sm rounded-rounded border border-gray">
+                        <svg aria-hidden="true" class="svg-icon-color-1" width="45" height="45" viewBox="0 0 48 48"><path opacity=".2" d="M29.22 38.1a3.4 3.4 0 014.81-4.82l8.81 8.81a3.4 3.4 0 01-4.81 4.81l-8.81-8.8z"></path><path d="M18.5 5a1 1 0 100 2c.63 0 1.24.05 1.84.15a1 1 0 00.32-1.98A13.6 13.6 0 0018.5 5zm7.02 1.97a1 1 0 10-1.04 1.7 11.5 11.5 0 015.44 8.45 1 1 0 001.98-.24 13.5 13.5 0 00-6.38-9.91zM18.5 0a18.5 18.5 0 1010.76 33.55c.16.57.46 1.12.9 1.57L40 44.94A3.5 3.5 0 1044.94 40l-9.82-9.82c-.45-.45-1-.75-1.57-.9A18.5 18.5 0 0018.5 0zM2 18.5a16.5 16.5 0 1133 0 16.5 16.5 0 01-33 0zm29.58 15.2a1.5 1.5 0 112.12-2.12l9.83 9.83a1.5 1.5 0 11-2.12 2.12l-9.83-9.83z"></path></svg>
+                    </div>
+                    <div class="media-body">
+                        <p class="pb-3 fs-18">Find the best answer to your technical question, <br> help others answer theirs</p>
+                    </div>
+                </div>
+            </div><!-- end col-lg-6 -->
+            <div class="col-lg-6 responsive-column-half">
+                <div class="media media-card align-items-center">
+                    <div class="icon-element icon-element-lg mr-4 shadow-sm rounded-rounded border border-gray">
+                        <svg aria-hidden="true" class="svg-icon-color-2" width="45" height="45" viewBox="0 0 48 48"><path opacity=".2" d="M12 22a2 2 0 00-2 2v19a4 4 0 004 4h24a4 4 0 004-4V26a4 4 0 00-4-4H12zm6 7a5 5 0 117.67 4.23l.05.35c.15.84.36 1.8.61 2.86A2.06 2.06 0 0124.35 39h-2.7a2.06 2.06 0 01-1.98-2.56c.29-1.2.52-2.3.66-3.2l-.19-.14A5 5 0 0118 29z"></path><path d="M23 24a5 5 0 00-2.86 9.1l.2.13c-.15.91-.38 2-.67 3.21A2.06 2.06 0 0021.65 39h2.7c1.32 0 2.3-1.26 1.98-2.56a46.74 46.74 0 01-.6-2.86l-.06-.35A5 5 0 0023 24zm0 2a3 3 0 011.76 5.43l-.16.11a2 2 0 00-.91 2c.16.98.4 2.12.7 3.37.01.05-.02.09-.04.09h-2.7c-.02 0-.05-.04-.04-.09.3-1.25.54-2.4.7-3.36a2 2 0 00-.78-1.92l-.13-.09A3 3 0 0123 26zM12 12.44V18H9a3 3 0 00-3 3v21a3 3 0 003 3h28a3 3 0 003-3V21a3 3 0 00-3-3h-3v-5.56C34 6.2 29.36 1 23 1S12 6.19 12 12.44zM23 3c5.14 0 9 4.18 9 9.44V18H14v-5.56C14 7.18 17.86 3 23 3zM9 20h28a1 1 0 011 1v21a1 1 0 01-1 1H9a1 1 0 01-1-1V21a1 1 0 011-1z"></path></svg>
+                    </div>
+                    <div class="media-body">
+                        <p class="pb-3 fs-18">Want a secure, private space for your <br> technical knowledge?</p>
+                   </div>
+                </div>
+            </div><!-- end col-lg-6 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+<!-- ================================
+         END GET START AREA
+================================= -->
+<!--======================================
+        START CLIENT LOGO AREA
+======================================-->
+<section class="client-logo-area section--padding bg-radial-gradient-gray">
+    <div class="container">
+        <div class="client-logo-box">
+            <h3 class="fs-21 text-center text-gray">Thousands of organizations around the globe use SnagSolving for Teams</h3>
+                </div><!-- end col-lg-3 -->
+            </div><!-- end row -->
+</section>
+<!--======================================
+        END CLIENT LOGO AREA
+======================================-->
+
+<!-- ================================
+         START CTA AREA
+================================= -->
+<section class="get-started-area section--padding pattern-bg" id="for-developers">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title pb-3">For developers, by developers.</h2>
+      <p class="section-desc w-50 mx-auto">
+        SnagSolving is an open community for everyone who codes. We help you find answers to your most challenging coding questions and share your knowledge with your coworkers privately.</p>
+    </div>
+    <div class="row pt-50px">
+      <div class="col-lg-4 responsive-column-half mx-auto"> <!-- Ajout de la classe mx-auto -->
+        <div class="card card-item hover-y text-center d-flex justify-content-center"> <div class="card-body">
+          <svg width="70" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><path d="m18.393 38.405c-.055-.674-.09-1.353-.09-2.041a24.887 24.887 0 0 1 43.171-16.888 22.577 22.577 0 0 1 30.826 6.882 18.466 18.466 0 0 1 25.4 23.657 18.459 18.459 0 0 1 -18.184 32.132 18.453 18.453 0 0 1 -25.566 3.314 19.9 19.9 0 0 1 -35.15-2.028 24.895 24.895 0 1 1 -20.4-45.028z" fill="#f0f5f9"/><path d="m1 62.146a24.91 24.91 0 0 0 37.8 21.291 19.892 19.892 0 0 0 35.15 2.02 18.442 18.442 0 0 0 25.565-3.31 18.467 18.467 0 0 0 26.975-20.417 18.461 18.461 0 0 1 -26.976 11.808 18.445 18.445 0 0 1 -25.565 3.31 19.882 19.882 0 0 1 -17.049 9.625c-8.041 0-11.776-2.155-11.509-9.358-3.765 2.285-13.42 4.268-18.141 4.268-12.285 0-23.844-11.866-25.874-23.562a25.252 25.252 0 0 0 -.376 4.325z" fill="#d9e2e9"/><g fill="#2f3a5a"><path d="m56.906 96.09a20.952 20.952 0 0 1 -18.536-11.255 25.9 25.9 0 1 1 -21.028-47.135c-.027-.467-.039-.909-.039-1.336a25.887 25.887 0 0 1 44.344-18.156 23.577 23.577 0 0 1 30.992 6.874 19.222 19.222 0 0 1 8.061-1.749 19.47 19.47 0 0 1 18.238 26.267 19.459 19.459 0 0 1 -19.172 33.814 19.456 19.456 0 0 1 -25.539 3.471 20.733 20.733 0 0 1 -17.321 9.205zm-18.106-13.657a1 1 0 0 1 .91.585 18.9 18.9 0 0 0 33.386 1.926 1 1 0 0 1 1.457-.282 17.453 17.453 0 0 0 24.18-3.135 1 1 0 0 1 1.274-.252 17.46 17.46 0 0 0 17.193-30.393 1 1 0 0 1 -.423-1.259 17.461 17.461 0 0 0 -24.024-22.374 1 1 0 0 1 -1.294-.345 21.575 21.575 0 0 0 -29.459-6.578 1 1 0 0 1 -1.262-.171 23.887 23.887 0 0 0 -41.438 16.209c0 .6.028 1.244.087 1.959a1 1 0 0 1 -.7 1.035 23.894 23.894 0 1 0 19.585 43.22 1 1 0 0 1 .528-.145z"/><path d="m25.9 88.034a25.921 25.921 0 0 1 -25.9-25.891 1 1 0 0 1 2 0 23.895 23.895 0 0 0 44.876 11.43 1 1 0 0 1 1.756.958 25.9 25.9 0 0 1 -22.732 13.503z"/><path d="m95.953 39.672a1 1 0 0 1 -1-1 21.584 21.584 0 0 0 -39.182-12.5 1 1 0 0 1 -1.63-1.159 23.584 23.584 0 0 1 42.812 13.659 1 1 0 0 1 -1 1z"/><path d="m113.436 57.16a1 1 0 0 1 -.69-1.724 17.461 17.461 0 0 0 -12.046-30.1 1 1 0 0 1 0-2 19.46 19.46 0 0 1 13.425 33.55.992.992 0 0 1 -.689.274z"/></g><path d="m64 39.039a20.832 20.832 0 0 0 -20.832 20.832v19.3h5.9v-19.3a14.93 14.93 0 1 1 29.859 0v19.3h5.9v-19.3a20.832 20.832 0 0 0 -20.827-20.832z" fill="#84879c"/><path d="m84.831 80.172h-5.9a1 1 0 0 1 -1-1v-19.3a13.93 13.93 0 1 0 -27.859 0v19.3a1 1 0 0 1 -1 1h-5.9a1 1 0 0 1 -1-1v-19.3a21.832 21.832 0 1 1 43.663 0v19.3a1 1 0 0 1 -1.004 1zm-4.9-2h3.9v-18.3a19.832 19.832 0 1 0 -39.663 0v18.3h3.9v-18.3a15.93 15.93 0 1 1 31.859 0z" fill="#2f3a5a"/><rect fill="#fac77c" height="43.593" rx="8.123" width="53.599" x="37.2" y="72.934"/><path d="m90.8 81.053v27.354a8.126 8.126 0 0 1 -8.13 8.119h-37.348a8.091 8.091 0 0 1 -6.61-3.408 7.862 7.862 0 0 0 2.576.421h37.352a8.135 8.135 0 0 0 8.13-8.129v-27.344a8.166 8.166 0 0 0 -1.509-4.722 8.154 8.154 0 0 1 5.539 7.709z" fill="#e5ae5c"/><path d="m82.676 117.527h-37.353a9.133 9.133 0 0 1 -9.123-9.127v-27.342a9.133 9.133 0 0 1 9.123-9.123h37.353a9.133 9.133 0 0 1 9.124 9.123v27.342a9.133 9.133 0 0 1 -9.124 9.127zm-37.353-43.592a7.131 7.131 0 0 0 -7.123 7.123v27.342a7.131 7.131 0 0 0 7.123 7.123h37.353a7.131 7.131 0 0 0 7.124-7.123v-27.342a7.131 7.131 0 0 0 -7.123-7.123z" fill="#2f3a5a"/><path d="m69.3 90.8a5.3 5.3 0 1 0 -7.564 4.782v8.385h4.519v-8.386a5.293 5.293 0 0 0 3.045-4.781z" fill="#84879c"/><path d="m66.259 104.966h-4.519a1 1 0 0 1 -1-1v-7.789a6.3 6.3 0 1 1 6.519 0v7.789a1 1 0 0 1 -1 1zm-3.519-2h2.519v-7.385a1 1 0 0 1 .572-.9 4.264 4.264 0 0 0 2.469-3.881 4.3 4.3 0 0 0 -8.609 0 4.264 4.264 0 0 0 2.473 3.878 1 1 0 0 1 .572.9z" fill="#2f3a5a"/></svg>
+          <h5 class="card-title pt-4 pb-2">Private Q&A</h5>
+          <p class="card-text pb-4"> Find the answer to your question in your private work space.</p>
+        </div><!-- end card-body -->
+        </div><!-- end card -->
+      </div><!-- end col-lg-4 -->
+    </div><!-- end row -->
+  </div><!-- end container -->
+</section>
+
+<!-- ================================
+         END CTA AREA
+================================= -->
+<!-- ================================
+         START CTA AREA
+================================= -->
+
+<!-- ================================
+         END CTA AREA
+================================= -->
+
+<!-- ================================
+         START INFO AREA
+================================= -->
+<section class="info-area section--padding " id ="for-businesse">
+    <div class="container ">
+        <div class="text-center">
+            <h2 class="section-title lh-50 pb-35px">Capture your company’s knowledge and context in a
+                <br> discoverable format to unblock your team
+            </h2>
+        </div>
+        <div class="row pt-60px">
+            <div class="col-lg-4 responsive-column-half">
+                <div class="info-box px-2 text-center">
+                    <div class="icon-element mb-4 shadow-sm mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 0 24 24" width="28px" fill="#48a868"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                    </div>
+                    <div class="info-body">
+                        <h3 class="fs-18 pb-3 fw-bold">Increase productivity</h3>
+                        <p>Enhance performance and deliver results effectively.</p>
+                    </div>
+                </div>
+            </div><!-- end col-lg-4 -->
+            <div class="col-lg-4 responsive-column-half">
+                <div class="info-box px-2 text-center">
+                    <div class="icon-element mb-4 shadow-sm mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 0 24 24" width="28px" fill="#48a868"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                    </div>
+                    <div class="info-body">
+                        <h3 class="fs-18 pb-3 fw-bold">Foster seamless collaboration among developers</h3>
+                        <p>Encourage collaboration for faster and better software development.</p>
+                    </div>
+                </div>
+            </div><!-- end col-lg-4 -->
+            <div class="col-lg-4 responsive-column-half">
+                <div class="info-box px-2 text-center">
+                    <div class="icon-element mb-4 shadow-sm mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 0 24 24" width="28px" fill="#48a868"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                    </div>
+                    <div class="info-body">
+                        <h3 class="fs-18 pb-3 fw-bold">Protect institutional knowledge</h3>
+                        <p>Preserve and share critical information within your organization.</p>
+                    </div>
+                </div>
+            </div><!-- end col-lg-4 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+<!-- ================================
+         END INFO AREA
+================================= -->
+
+<hr class="border-top-gray">
+
+<!-- ================================
+         START INFO AREA
+================================= -->
+<section class="info-area section--padding">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-title pb-3">Ensure your company stays on course </h2>
+            <p class="section-desc">Here are just a few types of technologists that we help.</p>
+        </div>
+        <div class="row pt-60px align-items-center">
+            <div class="col responsive-column-half card card-item case-card text-center">
+                <div class="card-body">
+                    <svg aria-hidden="true" width="96" height="96" viewBox="0 0 96 96"><path d="M78.2 14.36a1.73 1.73 0 011.27-1.85 37.5 37.5 0 017.66-1.5c1.09-.09 1.98.8 1.9 1.89-.21 2.6-.79 5.19-1.56 7.8a1.71 1.71 0 01-1.66 1.28c-4.27-.16-7.08-3.56-7.62-7.62zM34.55 77.77l3.55-2.84-10-11-3.36 2.69c-.89.7-1 2.02-.23 2.86l7.34 8.08c.7.77 1.88.86 2.7.21zM70.1 37.93a7 7 0 100-14 7 7 0 000 14zm-7 7a7 7 0 11-14 0 7 7 0 0114 0z" opacity=".2"></path><path d="M75.5 27a7 7 0 11-14 0 7 7 0 0114 0zm-7 4a4 4 0 100-8 4 4 0 000 8zm-14 17a7 7 0 100-14 7 7 0 000 14zm4-7a4 4 0 11-8 0 4 4 0 018 0zM27.21 70.41l2.93 3.23a3.47 3.47 0 004.74.37l2.82-2.25c.95.34 2.03.25 2.95-.33.8-.51 1.95-1.26 3.35-2.2v8.29c0 3.02 3.6 4.6 5.82 2.56l8.25-7.56a3.5 3.5 0 001.03-1.77l3.84-16.33c1.7-1.53 3.4-3.13 5.08-4.8 11.26-11.2 22.04-25.83 22.92-41.56a3.32 3.32 0 00-3.5-3.5c-15.71.86-30.38 11.47-41.59 22.54a161.7 161.7 0 00-5.19 5.4 1.5 1.5 0 00-.54.05l-18.35 4.83c-.74.2-1.4.63-1.87 1.25l-5.18 6.8A3.47 3.47 0 0017.48 51H26c-.83 1.21-1.5 2.2-1.95 2.92a3.42 3.42 0 00.38 4.2l.4.43-2.06 2.06a3.47 3.47 0 00-.11 4.79l2.53 2.79-.75.75a1.5 1.5 0 002.12 2.12l.65-.65zM87.95 7.9c-.17 2.9-.7 5.78-1.53 8.61a9.21 9.21 0 01-5.8-2.27 7.13 7.13 0 01-2.6-4.88 39.23 39.23 0 019.59-1.8c.2 0 .35.15.34.34zM47.96 29.24c7.87-7.77 17.2-15.02 27.15-18.87a10.32 10.32 0 003.54 6.13 12.33 12.33 0 006.8 2.95c-3.8 10.29-11.39 19.93-19.54 28.03A169.1 169.1 0 0139.04 68.9c-.15.1-.37.08-.53-.09l-4.68-5.02 10.73-10.73a1.5 1.5 0 00-2.12-2.12L31.78 61.6l-5.16-5.53a.42.42 0 01-.06-.52 167.03 167.03 0 0121.4-26.31zm-18.3 34.48l-2.35 2.35-2.43-2.69a.47.47 0 01.01-.65l1.99-1.99 2.78 2.98zm-.33 4.57l2.37-2.37 3.64 3.89L33 71.67a.47.47 0 01-.65-.05l-3.03-3.33zM47 67.15c3.38-2.4 7.6-5.56 12.06-9.34l-2.88 12.25a.47.47 0 01-.14.24l-8.25 7.56a.47.47 0 01-.79-.34V67.15zm-9.8-30.73A177.28 177.28 0 0028.11 48H17.48a.47.47 0 01-.37-.76l5.17-6.8a.47.47 0 01.26-.16l14.67-3.86zM14.06 81.44a1.5 1.5 0 010 2.12l-7 7a1.5 1.5 0 01-2.12-2.12l7-7a1.5 1.5 0 012.12 0zm9-6.88a1.5 1.5 0 00-2.12-2.12l-5 5a1.5 1.5 0 002.12 2.12l5-5zm-7-4.12a1.5 1.5 0 010 2.12l-7 7a1.5 1.5 0 01-2.12-2.12l7-7a1.5 1.5 0 012.12 0zm9 12.12a1.5 1.5 0 00-2.12-2.12l-5 5a1.5 1.5 0 002.12 2.12l5-5z"></path></svg>
+                    <h5 class="card-title pt-4 pb-2">DevOps engineers</h5>
+                    <p class="card-text">T.</p>
+                </div><!-- end card-body -->
+            </div><!-- end col -->
+            <div class="col responsive-column-half card card-item case-card text-center">
+                <div class="card-body">
+                    <svg aria-hidden="true" width="96" height="96" viewBox="0 0 96 96"><path d="M86 26.5a6.5 6.5 0 100-13 6.5 6.5 0 000 13zm-52 25a6.5 6.5 0 100-13 6.5 6.5 0 000 13zm-15 40a6.5 6.5 0 100-13 6.5 6.5 0 000 13zM72.5 60a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" opacity=".2"></path><path d="M75 17a8 8 0 116.49 7.86L68.04 50.79A7.98 7.98 0 0163 65a8 8 0 01-7.85-9.55l-17-9.84a8 8 0 01-8.56 4.27L20.21 75.2a8 8 0 11-2.8-1.08l9.38-25.32a8 8 0 1112.19-6.18l17.3 10.02a8 8 0 019.12-3.27l13.29-25.63A8 8 0 0175 17zm8-5a5 5 0 100 10 5 5 0 000-10zM31 37a5 5 0 100 10 5 5 0 000-10zM16 77a5 5 0 100 10 5 5 0 000-10zm42-20a5 5 0 1010 0 5 5 0 00-10 0z"></path></svg>
+                    <h5 class="card-title pt-4 pb-2">Data scientists</h5>
+                    <p class="card-text"></p>
+                </div><!-- end card-body -->
+            </div><!-- end col -->
+            <div class="col responsive-column-half card card-item case-card text-center case-card-is-active">
+                <div class="card-body">
+                    <svg aria-hidden="true" width="96" height="96" viewBox="0 0 96 96"><path d="M33.3 60.21a1 1 0 01-.04-1.46l41.1-40.1a1 1 0 01.33-.22l10.83-4.17a1 1 0 011.31 1.25l-3.26 9.78a1 1 0 01-.22.37L43.17 67.8a1 1 0 01-1.4.05l-8.48-7.64zm-9.19 19.02a1 1 0 00.38.98l2.12 1.61a1 1 0 01.11 1.49l-9.1 9.48a3 3 0 01-4.29.04l-5.1-5.1a3 3 0 01.11-4.35l12.5-11.28a1 1 0 011.33-.01l2.38 2.08a1 1 0 01.33.94l-.77 4.12z" opacity=".2"></path><path d="M91.4 5.56a1.5 1.5 0 00-1.87-1.98l-15 5c-.24.07-.44.2-.61.38l-9.2 9.6.26-1.85a1.5 1.5 0 00-.86-1.58l-11-5a1.5 1.5 0 00-1.93.64l-4.51 8.12c-2.16-.21-4.27-.2-6.35 0l-4.52-8.12a1.5 1.5 0 00-1.93-.64l-11 5a1.5 1.5 0 00-.84 1.73l1.77 7.06c-.9.76-1.6 1.62-2.22 2.46-.32.44-.63.9-.93 1.33v.01a245.75 245.75 0 01-.71 1.01l-7.98-2.65a1.5 1.5 0 00-1.85.84l-5 12a1.5 1.5 0 00.77 1.95l8 3.56c-.2 2.27-.2 4.93 0 7.14l-8 3.56a1.5 1.5 0 00-.77 1.95l5 12a1.5 1.5 0 001.85.84l2.58-.86-9.57 8.84a1.5 1.5 0 00-.04 2.16l9 9a1.5 1.5 0 002.12 0l7.77-7.76 10.05 4.57c.73.33 1.6.02 1.96-.7l3.53-7.06c2.19.22 4.34.2 6.45-.02l5.48 7.31c.4.54 1.13.74 1.76.5l10-4c.62-.26 1-.9.93-1.57l-.9-8.13a21 21 0 003.99-4.01l7.06 1.77a1.5 1.5 0 001.73-.84l5-11a1.5 1.5 0 00-.5-1.84L74.1 51.8c.24-2.24.22-4.44 0-6.6l6.28-4.48c.57-.4.78-1.15.52-1.8l-3.59-8.64a1.5 1.5 0 00-.58-.7l8.35-8.53c.14-.14.25-.3.32-.5l6-15zM20.01 68.1c.1-.09.18-.19.25-.3 1 1.46 2.1 2.94 3.55 4.24l-1.67 6.7-.65.64-5.94-5.94a1.5 1.5 0 00-.86-.43l5.32-4.9zM13 74.58c.02.36.17.7.44.98l5.94 5.94L15 85.88l-6.84-6.84L13 74.58zm12.34 3.74l1.62-6.46a1.5 1.5 0 00-.53-1.54c-1.7-1.33-2.8-2.93-4.13-4.86l-.57-.82a1.5 1.5 0 00-1.7-.56l-7.68 2.56-3.9-9.36 7.66-3.4c.6-.28.96-.91.88-1.57a37.6 37.6 0 010-8.61 1.5 1.5 0 00-.88-1.57l-7.66-3.4 3.9-9.37 7.68 2.56c.6.2 1.26 0 1.65-.5.45-.57.86-1.15 1.24-1.7l.22-.32.87-1.24a10.1 10.1 0 012.35-2.43c.5-.36.75-.99.6-1.6l-1.7-6.78 8.6-3.91 4.33 7.79c.3.53.89.84 1.5.76a29.4 29.4 0 017.61 0 1.5 1.5 0 001.51-.76l4.33-7.8 8.72 3.97-.7 4.87-6.23 6.5a14.06 14.06 0 00-4.86-2.61A21.77 21.77 0 0043.5 25C31.49 25 23 34.69 23 46.5c0 11.76 8.53 22.1 20.6 22.1C55.47 68.6 66 58.44 66 46.5a10.2 10.2 0 00-1.14-4.65l-.02-.02a4.72 4.72 0 00-.03-.06l9.84-10.06 3 7.26-6.02 4.3A1.5 1.5 0 0071 44.7c.32 2.5.35 5.04 0 7.61-.07.55.17 1.1.62 1.42l6 4.28-3.98 8.74-6.79-1.7a1.5 1.5 0 00-1.54.53c-1.66 2.12-2.65 3.29-4.68 4.7-.45.31-.7.85-.63 1.4l.87 7.86L53 82.69l-5.31-7.08a1.5 1.5 0 00-1.39-.59c-2.5.32-5.04.35-7.61 0a1.5 1.5 0 00-1.54.82l-3.36 6.7-8.32-3.78a1.5 1.5 0 00-.14-.43zm37.38-53.34a1.5 1.5 0 001.26-1.27l.01-.06 10.54-11 7.36 7.36-43.73 44.7a17.18 17.18 0 01-8-5.76l32.56-33.97zM49.1 29c1.62.55 2.93 1.23 3.74 1.94L28.47 56.38A20.59 20.59 0 0126 46.5C26 36.14 33.34 28 43.5 28c1.58 0 3.68.35 5.61 1zm-5.52 36.6c-.67 0-1.34-.04-1.99-.11l20.96-21.43.02.04v.02c.21.59.42 1.42.42 2.38 0 10.23-9.12 19.1-19.4 19.1zm39.86-48.27l-6.42-6.42L87.4 7.45l-3.96 9.88z"></path></svg>
+                    <h5 class="card-title pt-4 pb-2">Software engineers</h5>
+                    <p class="card-text"></p>
+                </div><!-- end card-body -->
+            </div><!-- end col -->
+            <div class="col responsive-column-half card card-item case-card text-center">
+                <div class="card-body">
+                    <svg aria-hidden="true" width="96" height="96" viewBox="0 0 96 96"><path d="M67.37 12.9A38.67 38.67 0 0050.8 9a38.02 38.02 0 00-16.47 3.9c-.38.3-.44.74-.19 1.2l4.74 7.49c.24.35.79.61 1.29.6.1-.01.21-.04.32-.07 1.01-.29 6.76-1.88 10.4-1.88 3.7 0 9.6 1.65 10.45 1.9.07.02.14.04.22.04.44.05 1-.15 1.25-.6l4.73-7.49c.26-.44.2-.9-.18-1.18zM19 77.5a7.84 7.84 0 007.79 7.88 3.98 3.98 0 003.93-3.9v-18.5A4 4 0 0026.8 59a7.84 7.84 0 00-7.8 7.89v10.6zm57.94 6.88c4.3 0 7.78-3.54 7.78-7.89V65.9a7.84 7.84 0 00-7.78-7.9A4 4 0 0073 61.99v18.5a3.98 3.98 0 003.94 3.89zM49 92h6a3 3 0 000-6h-6a3 3 0 000 6z" opacity=".2"></path><path d="M54.5 12a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM50 10.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM42.5 12a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM11 43.69a37.1 37.1 0 0119.3-32.54l1.99 2.93C20.7 19.81 13.95 30.6 13.95 44.57a1.5 1.5 0 003 0c0-13 6.27-22.8 17-27.96l.05-.02 1.66 2.44c.38.57 1.1.8 1.74.57a34.63 34.63 0 0111.47-1.97c4.03 0 7.94.63 11.45 1.96.66.25 1.4 0 1.79-.58l1.33-2.06c10.35 5.35 16.59 14.92 16.59 27.62a1.5 1.5 0 003 0c0-13.74-6.78-24.26-17.95-30.14l1.99-3.06A37.8 37.8 0 0175 17.41a36.77 36.77 0 0111 26.28V64h-3v-1.23c0-5.26-4.7-9.27-10.13-9.27-3.06 0-5.87 2.31-5.87 5.43v18.23c0 3.05 2.83 5.34 5.87 5.34.2 0 .4 0 .59-.02-.07.39-.21.77-.4 1.06-.28.43-.5.46-.56.46H54.74a4.5 4.5 0 00-4.24-3h-6a4.5 4.5 0 000 9h6a4.5 4.5 0 004.24-3H72.5a3.7 3.7 0 003.07-1.83c.6-.92.93-2.08.93-3.17v-.03a1.78 1.78 0 000-.09c3.74-1.32 6.5-4.62 6.5-8.65V73h4.33c2.46 0 4.17-2.19 4.17-4.5 0-1.74-.97-3.41-2.5-4.13V43.69c0-11.12-4.5-21.1-11.88-28.41A40.39 40.39 0 0048.5 3.5C26.1 3.5 8 21.45 8 43.69v20.48a4.5 4.5 0 00-3 4.33C5 70.81 6.7 73 9.17 73H13v.23c0 5.26 4.7 9.27 10.13 9.27 3.04 0 5.87-2.3 5.87-5.34V58.93c0-3.12-2.8-5.43-5.87-5.43C17.7 53.5 13 57.51 13 62.77V64h-2V43.69zM37.5 16.4L33 9.8a37.72 37.72 0 0115.5-3.3 37.5 37.5 0 0115.89 3.49l-4.16 6.39a37.63 37.63 0 00-22.73.03zm14.25 68.26a1.5 1.5 0 000 1.66c-.27.4-.73.67-1.25.67h-6a1.5 1.5 0 010-3h6c.52 0 .98.27 1.25.67zM23.13 56.5c1.7 0 2.87 1.26 2.87 2.43v18.23c0 1.06-1.14 2.34-2.87 2.34-4.08 0-7.13-2.96-7.13-6.27V62.77c0-3.31 3.05-6.27 7.13-6.27zM9.17 67H13v3H9.17C8.69 70 8 69.5 8 68.5S8.69 67 9.17 67zM70 58.93c0-1.17 1.16-2.43 2.87-2.43 4.08 0 7.13 2.96 7.13 6.27v10.46c0 3.31-3.05 6.27-7.13 6.27-1.73 0-2.87-1.28-2.87-2.34V58.93zM83.5 70v-3h3.83c.48 0 1.17.5 1.17 1.5s-.69 1.5-1.17 1.5H83.5z"></path></svg>
+                    <h5 class="card-title pt-4 pb-2">Support teams</h5>
+                    <p class="card-text"></p>
+                </div><!-- end card-body -->
+            </div><!-- end col -->
+            <div class="col responsive-column-half card card-item case-card text-center">
+                <div class="card-body">
+                    <svg aria-hidden="true" width="96" height="96" viewBox="0 0 96 96"><path opacity=".2" d="M36 47.5a9.48 9.48 0 01-3.67 7.5h5.76a1 1 0 01.7.29l1.39 1.36A9.5 9.5 0 0157.87 54h7.7a9.5 9.5 0 1113.86 0H83a4 4 0 014 4v23a2 2 0 01-2 2H64v10a1 1 0 01-1 1H36a1 1 0 01-1-1V83H16a1 1 0 01-1-1V59a4 4 0 014-4h1.67a9.48 9.48 0 015.83-17 9.5 9.5 0 019.5 9.5z"></path><path d="M13 44.5A11 11 0 1130.98 53h.52a1.5 1.5 0 010 3H15.54C13.5 56 12 57.54 12 59.21V78h4.38a1.5 1.5 0 01-.38-1V63a1.5 1.5 0 013 0v14c0 .38-.14.73-.38 1h9.06a1.5 1.5 0 010 3H10.5A1.5 1.5 0 019 79.5V59.21c0-3.5 3.03-6.21 6.54-6.21h1.48A10.98 10.98 0 0113 44.5zm11-8a8 8 0 100 16 8 8 0 000-16zm23 8A11 11 0 0040.02 64h-1.33C35.12 64 32 66.73 32 70.3v20.2c0 .83.67 1.5 1.5 1.5h27c.83 0 1.5-.67 1.5-1.5V70.3c0-3.57-3.12-6.3-6.7-6.3h-1.32A11 11 0 0047 44.5zm-8 11a8 8 0 1116 0 8 8 0 01-16 0zm-4 14.8c0-1.7 1.55-3.3 3.7-3.3h16.6c2.15 0 3.7 1.6 3.7 3.3V89h-4V75a1.5 1.5 0 00-3 0v14H42V75a1.5 1.5 0 00-3 0v14h-4V70.3zm35-36.8A11 11 0 0176.98 53h1.7A6.28 6.28 0 0185 59.21V79.5c0 .83-.67 1.5-1.5 1.5H66.32a1.5 1.5 0 010-3h8.06a1.5 1.5 0 01-.38-1V63a1.5 1.5 0 013 0v14c0 .38-.14.73-.38 1H82V59.21A3.28 3.28 0 0078.68 56H62.5a1.5 1.5 0 010-3h.52A11 11 0 0170 33.5zm8 11a8 8 0 10-16 0 8 8 0 0016 0z"></path><path d="M12.5 11a1.5 1.5 0 000 3h13a1.5 1.5 0 000-3h-13zM11 17.5c0-.83.67-1.5 1.5-1.5h9a1.5 1.5 0 010 3h-9a1.5 1.5 0 01-1.5-1.5zm-5-10C6 6.67 6.67 6 7.5 6h25c.83 0 1.5.67 1.5 1.5v15c0 .83-.67 1.5-1.5 1.5H29v6a1.5 1.5 0 01-2.4 1.2L17 24H7.5A1.5 1.5 0 016 22.5v-15zM9 9v12h8.5c.32 0 .64.1.9.3L26 27v-6h5V9H9zm60.5 3a1.5 1.5 0 000 3h13a1.5 1.5 0 000-3h-13zM68 18.5c0-.83.67-1.5 1.5-1.5h8a1.5 1.5 0 010 3h-8a1.5 1.5 0 01-1.5-1.5zM87.5 7c.83 0 1.5.67 1.5 1.5v16c0 .83-.67 1.5-1.5 1.5H76.42l-7.15 4.29A1.5 1.5 0 0167 29v-3h-2.5a1.5 1.5 0 01-1.5-1.5v-16c0-.83.67-1.5 1.5-1.5h23zM86 23V10H66v13h4v3.35l5.23-3.14c.23-.14.5-.21.77-.21h10zm-42.5 4a1.5 1.5 0 000 3h9a1.5 1.5 0 000-3h-9zM59 22.5c0-.83-.67-1.5-1.5-1.5h-19c-.83 0-1.5.67-1.5 1.5v12c0 .83.67 1.5 1.5 1.5H41v4.5a1.5 1.5 0 002.56 1.06L49.12 36h8.38c.83 0 1.5-.67 1.5-1.5v-12zM40 24h16v9h-8.12L44 36.88V33h-4v-9z" opacity=".35"></path></svg>
+                    <h5 class="card-title pt-4 pb-2">Engineering leaders</h5>
+                    <p class="card-text"></p>
+                </div><!-- end card-body -->
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+<!-- ================================
+         END INFO AREA
+================================= -->
+
+<hr class="border-top-gray">
+
+<hr class="border-top-gray">
+
+
+<hr class="border-top-gray">
+
+<!-- ================================
+         START CTA AREA
+================================= -->
+<section class="get-started-area section--padding">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-title">Learn and grow with Snag Solving </h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 responsive-column-half">
+                <div class="info-box px-2">
+                    <div class="icon-element icon-element-lg mb-4 shadow-sm">
+                        <svg class="svg-icon-color-1" width="40" viewBox="0 -25 424 424" xmlns="http://www.w3.org/2000/svg"><path d="m167.289062 272.132812c-1.601562 0-3.214843-.550781-4.53125-1.671874l-45.296874-38.570313c-1.5625-1.332031-2.460938-3.277344-2.460938-5.332031 0-2.050782.902344-3.996094 2.460938-5.328125l45.296874-38.570313c2.941407-2.507812 7.359376-2.152344 9.867188.789063 2.503906 2.945312 2.152344 7.363281-.792969 9.867187l-39.035156 33.242188 39.035156 33.242187c2.945313 2.507813 3.296875 6.925781.792969 9.867188-1.386719 1.628906-3.355469 2.464843-5.335938 2.464843zm0 0"/><path d="m256.710938 272.132812c-1.980469 0-3.949219-.835937-5.332032-2.464843-2.507812-2.941407-2.152344-7.359375.789063-9.867188l39.035156-33.242187-39.035156-33.242188c-2.941407-2.503906-3.296875-6.921875-.789063-9.867187 2.503906-2.941407 6.925782-3.296875 9.863282-.789063l45.296874 38.570313c1.5625 1.332031 2.460938 3.277343 2.460938 5.328125 0 2.054687-.898438 4-2.460938 5.332031l-45.296874 38.570313c-1.316407 1.121093-2.929688 1.671874-4.53125 1.671874zm0 0"/><path d="m195.964844 301.0625c-.480469 0-.964844-.050781-1.453125-.152344-3.78125-.796875-6.203125-4.511718-5.40625-8.292968l28.230469-134.035157c.796874-3.78125 4.507812-6.203125 8.292968-5.40625 3.78125.796875 6.203125 4.507813 5.40625 8.292969l-28.230468 134.035156c-.695313 3.296875-3.601563 5.558594-6.839844 5.558594zm0 0"/><path d="m377 374.085938h-330c-25.914062 0-47-21.082032-47-47v-280.085938c0-25.914062 21.085938-47 47-47h330c25.914062 0 47 21.085938 47 47v280.085938c0 25.917968-21.085938 47-47 47zm-330-360.085938c-18.195312 0-33 14.804688-33 33v280.085938c0 18.195312 14.804688 33 33 33h330c18.195312 0 33-14.804688 33-33v-280.085938c0-18.195312-14.804688-33-33-33zm0 0"/><path d="m417 112.089844h-410c-3.867188 0-7-3.132813-7-7 0-3.863282 3.132812-7 7-7h410c3.867188 0 7 3.136718 7 7 0 3.867187-3.132812 7-7 7zm0 0"/><path d="m119.601562 78.59375c-12.210937 0-22.152343-9.941406-22.152343-22.152344 0-12.214844 9.941406-22.152344 22.152343-22.152344 12.214844 0 22.152344 9.9375 22.152344 22.152344 0 12.210938-9.9375 22.152344-22.152344 22.152344zm0-30.304688c-4.492187 0-8.152343 3.65625-8.152343 8.152344s3.660156 8.152344 8.152343 8.152344c4.496094 0 8.152344-3.65625 8.152344-8.152344s-3.65625-8.152344-8.152344-8.152344zm0 0"/><path d="m51.539062 78.378906c-12.214843 0-22.152343-9.9375-22.152343-22.152344 0-12.214843 9.9375-22.152343 22.152343-22.152343 12.214844 0 22.152344 9.9375 22.152344 22.152343 0 12.214844-9.9375 22.152344-22.152344 22.152344zm0-30.304687c-4.492187 0-8.152343 3.660156-8.152343 8.152343 0 4.496094 3.660156 8.152344 8.152343 8.152344 4.496094 0 8.152344-3.65625 8.152344-8.152344 0-4.492187-3.65625-8.152343-8.152344-8.152343zm0 0"/><path d="m187.664062 78.804688c-12.210937 0-22.148437-9.9375-22.148437-22.152344 0-12.210938 9.9375-22.148438 22.148437-22.148438 12.214844 0 22.152344 9.9375 22.152344 22.148438 0 12.214844-9.9375 22.152344-22.152344 22.152344zm0-30.304688c-4.492187 0-8.148437 3.65625-8.148437 8.152344s3.65625 8.152344 8.148437 8.152344c4.496094 0 8.152344-3.65625 8.152344-8.152344s-3.65625-8.152344-8.152344-8.152344zm0 0"/></svg>
+                    </div>
+                    <div class="info-body">
+                        <h3 class="fs-18 pb-3 fw-bold">Write the script of the future</h3>
+                    </div>
+                </div>
+            </div><!-- end col-lg-3 -->
+            <div class="col-lg-3 responsive-column-half">
+                <div class="info-box px-2">
+                    <div class="icon-element icon-element-lg mb-4 shadow-sm">
+                        <svg class="svg-icon-color-2" width="40" viewBox="0 0 569 569.54905" xmlns="http://www.w3.org/2000/svg"><path d="m1.527344 52.246094 37.984375 66.46875c1.28125 2.246094 3.425781 3.871094 5.933593 4.5l35.4375 8.859375 121.542969 121.542969 13.429688-13.425782-123.445313-123.441406c-1.214844-1.21875-2.738281-2.082031-4.40625-2.5l-34.050781-8.542969-32.339844-56.625 27.726563-27.726562 56.648437 32.371093 8.546875 34.050782c.414063 1.671875 1.28125 3.199218 2.496094 4.414062l123.445312 123.445313 13.425782-13.429688-121.542969-121.542969-8.859375-35.417968c-.628906-2.511719-2.253906-4.660156-4.5-5.945313l-66.472656-37.980469c-3.707032-2.109374-8.371094-1.484374-11.394532 1.527344l-37.980468 37.984375c-3.0546878 3.003907-3.71875 7.675781-1.625 11.414063zm0 0"/><path d="m396.3125 187.144531-208.902344 208.90625-13.429687-13.429687 208.90625-208.902344zm0 0"/><path d="m150.847656 403.441406c-1.71875-2.859375-4.804687-4.605468-8.140625-4.605468h-56.972656c-3.332031 0-6.421875 1.746093-8.136719 4.605468l-28.488281 47.476563c-1.808594 3.007812-1.808594 6.769531 0 9.78125l28.488281 47.476562c1.714844 2.855469 4.804688 4.605469 8.136719 4.605469h56.972656c3.335938 0 6.421875-1.75 8.140625-4.605469l28.484375-47.476562c1.808594-3.011719 1.808594-6.773438 0-9.78125zm-13.511718 90.347656h-46.226563l-22.789063-37.980468 22.789063-37.984375h46.226563l22.789062 37.984375zm0 0"/><path d="m456.0625 227.914062c62.714844.210938 113.730469-50.460937 113.941406-113.175781.03125-9.546875-1.140625-19.054687-3.488281-28.308593-1.265625-5.089844-6.417969-8.1875-11.507813-6.921876-1.671874.417969-3.195312 1.28125-4.414062 2.496094l-59.109375 59.070313-46.898437-15.628907-15.640626-46.886718 59.109376-59.121094c3.707031-3.710938 3.703124-9.722656-.007813-13.429688-1.222656-1.222656-2.761719-2.089843-4.445313-2.503906-60.820312-15.402344-122.605468 21.414063-138.007812 82.230469-2.339844 9.226563-3.507812 18.710937-3.476562 28.230469.023437 7.476562.792968 14.929687 2.308593 22.25l-207.957031 207.953125c-7.320312-1.511719-14.773438-2.28125-22.246094-2.308594-62.933594 0-113.949218 51.015625-113.949218 113.949219 0 62.929687 51.015624 113.945312 113.949218 113.945312 62.929688 0 113.945313-51.015625 113.945313-113.945312-.023438-7.476563-.796875-14.929688-2.308594-22.25l49.785156-49.785156 21.773438 21.773437c3.710937 3.707031 9.71875 3.707031 13.429687 0l4.746094-4.75c4.164062-4.136719 10.894531-4.136719 15.058594 0 4.160156 4.148437 4.167968 10.882813.019531 15.042969-.003906.003906-.011719.011718-.019531.019531l-4.746094 4.746094c-3.707031 3.707031-3.707031 9.71875 0 13.425781l113.273438 113.273438c29.792968 30.066406 78.316406 30.285156 108.382812.492187 30.0625-29.792969 30.28125-78.320313.488281-108.382813-.160156-.164062-.324219-.328124-.488281-.492187l-113.273438-113.269531c-3.707031-3.707032-9.71875-3.707032-13.425781 0l-4.746093 4.746094c-4.167969 4.140624-10.894532 4.140624-15.0625 0-4.15625-4.148438-4.167969-10.882813-.019532-15.039063.007813-.007813.015625-.011719.019532-.019531l4.75-4.75c3.707031-3.707032 3.707031-9.71875 0-13.425782l-21.773438-21.773437 49.785156-49.785156c7.320313 1.511719 14.773438 2.285156 22.246094 2.308593zm37.308594 322.851563c-6.898438-.011719-13.738282-1.257813-20.195313-3.683594l74.160157-74.164062c11.191406 29.769531-3.867188 62.972656-33.636719 74.164062-6.496094 2.441407-13.382813 3.691407-20.328125 3.683594zm-107.574219-246.792969c-10.515625 12.542969-8.867187 31.238282 3.675781 41.75 11.023438 9.238282 27.089844 9.230469 38.101563-.027344l106.5625 106.65625c1.15625 1.160157 2.238281 2.382813 3.285156 3.625l-81.1875 81.1875c-1.246094-1.042968-2.46875-2.125-3.628906-3.285156l-106.644531-106.652344c10.515624-12.542968 8.867187-31.238281-3.675782-41.75-11.023437-9.242187-27.09375-9.230468-38.105468.023438l-15.191407-15.191406 81.613281-81.492188zm38.34375-95.503906-215.410156 215.367188c-2.363281 2.359374-3.3125 5.785156-2.507813 9.023437 13.027344 51.160156-17.886718 103.195313-69.050781 116.21875-51.160156 13.027344-103.195313-17.886719-116.222656-69.050781-13.023438-51.160156 17.890625-103.195313 69.054687-116.222656 15.476563-3.9375 31.691406-3.9375 47.167969 0 3.238281.792968 6.65625-.15625 9.023437-2.503907l215.359376-215.371093c2.359374-2.359376 3.308593-5.785157 2.496093-9.019532-12.9375-50.5625 17.5625-102.039062 68.125-114.980468 9.554688-2.441407 19.4375-3.378907 29.28125-2.765626l-50.089843 50.109376c-2.542969 2.539062-3.433594 6.300781-2.296876 9.710937l18.988282 56.976563c.949218 2.832031 3.175781 5.058593 6.011718 6l56.976563 18.992187c3.40625 1.136719 7.167969.25 9.710937-2.289063l50.089844-50.089843c.113282 1.8125.171875 3.605469.171875 5.390625.265625 52.175781-41.8125 94.6875-93.988281 94.957031-8.066406.039063-16.105469-.953125-23.917969-2.953125-3.238281-.808594-6.664062.136719-9.023437 2.496094h.050781zm0 0"/><path d="m491.273438 477.578125-13.429688 13.429687-94.953125-94.953124 13.425781-13.429688zm0 0"/></svg>
+                    </div>
+                    <div class="info-body">
+                        <h3 class="fs-18 pb-3 fw-bold">Support open source</h3>
+                    </div>
+                </div>
+            </div><!-- end col-lg-3 -->
+            <div class="col-lg-3 responsive-column-half">
+                <div class="info-box px-2">
+                    <div class="icon-element icon-element-lg mb-4 shadow-sm">
+                        <svg class="svg-icon-color-3" width="40" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+                            <g>
+                                <path d="M346,319c-5.522,0-10,4.477-10,10v69c0,27.57-22.43,50-50,50H178.032c-5.521,0-9.996,4.473-10,9.993l-0.014,19.882
+                                        l-23.868-23.867c-1.545-3.547-5.081-6.008-9.171-6.008H70c-27.57,0-50-22.43-50-50V244c0-27.57,22.43-50,50-50h101
+                                        c5.522,0,10-4.477,10-10s-4.478-10-10-10H70c-38.598,0-70,31.402-70,70v154c0,38.598,31.402,70,70,70h59.858l41.071,41.071
+                                        c1.913,1.913,4.47,2.929,7.073,2.929c1.287,0,2.586-0.249,3.821-0.76c3.737-1.546,6.174-5.19,6.177-9.233L188.024,468H286
+                                        c38.598,0,70-31.402,70-70v-69C356,323.477,351.522,319,346,319z"/>
+                            </g>
+                             <g>
+                                 <path d="M366.655,0h-25.309C261.202,0,196,65.202,196,145.346s65.202,145.345,145.345,145.345h25.309
+                                        c12.509,0,24.89-1.589,36.89-4.729l37.387,37.366c1.913,1.911,4.469,2.927,7.071,2.927c1.289,0,2.589-0.249,3.826-0.762
+                                        c3.736-1.548,6.172-5.194,6.172-9.238v-57.856c15.829-12.819,28.978-29.012,38.206-47.102
+                                        C506.687,190.751,512,168.562,512,145.346C512,65.202,446.798,0,366.655,0z M441.983,245.535
+                                        c-2.507,1.889-3.983,4.847-3.983,7.988v38.6l-24.471-24.458c-1.904-1.902-4.458-2.927-7.07-2.927c-0.98,0-1.97,0.145-2.936,0.442
+                                        c-11.903,3.658-24.307,5.512-36.868,5.512h-25.309c-69.117,0-125.346-56.23-125.346-125.346S272.23,20,341.346,20h25.309
+                                        C435.771,20,492,76.23,492,145.346C492,185.077,473.77,221.595,441.983,245.535z"/>
+                            </g>
+                            <g>
+                                <path d="M399.033,109.421c-1.443-20.935-18.319-37.811-39.255-39.254c-11.868-0.815-23.194,3.188-31.863,11.281
+                                        c-8.55,7.981-13.453,19.263-13.453,30.954c0,5.523,4.478,10,10,10c5.522,0,10-4.477,10-10c0-6.259,2.522-12.06,7.1-16.333
+                                        c4.574-4.269,10.552-6.382,16.842-5.948c11.028,0.76,19.917,9.649,20.677,20.676c0.768,11.137-6.539,20.979-17.373,23.403
+                                        c-8.778,1.964-14.908,9.592-14.908,18.549v24.025c0,5.523,4.478,10,10,10c5.523,0,10-4.477,9.999-10v-23.226
+                                        C386.949,148.68,400.468,130.242,399.033,109.421z"/>
+                            </g>
+                             <g>
+                                 <path d="M363.87,209.26c-1.86-1.86-4.44-2.93-7.07-2.93s-5.21,1.07-7.07,2.93c-1.86,1.86-2.93,4.44-2.93,7.07
+                                        c0,2.64,1.071,5.22,2.93,7.08c1.86,1.86,4.44,2.92,7.07,2.92s5.21-1.06,7.07-2.92c1.86-1.87,2.93-4.44,2.93-7.08
+                                        C366.8,213.7,365.729,211.12,363.87,209.26z"/>
+                            </g>
+                            <g>
+                                <path d="M275,310H64c-5.522,0-10,4.477-10,10s4.478,10,10,10h211c5.523,0,10-4.477,10-10S280.522,310,275,310z"/>
+                            </g>
+                            <g>
+                                <path d="M282.069,368.93C280.21,367.07,277.63,366,275,366s-5.21,1.07-7.07,2.93c-1.861,1.86-2.93,4.44-2.93,7.07
+                                        s1.07,5.21,2.93,7.07c1.86,1.86,4.44,2.93,7.07,2.93s5.21-1.07,7.069-2.93c1.861-1.86,2.931-4.43,2.931-7.07
+                                        C285,373.37,283.929,370.79,282.069,368.93z"/>
+                            </g>
+                            <g>
+                                <path d="M235.667,366H64c-5.522,0-10,4.477-10,10s4.478,10,10,10h171.667c5.523,0,10-4.477,10-10S241.189,366,235.667,366z"/>
+                            </g>
+                            <g>
+                                <path d="M210,254H64c-5.522,0-10,4.477-10,10s4.478,10,10,10h146c5.523,0,10-4.477,10-10S215.522,254,210,254z"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="info-body">
+                        <h3 class="fs-18 pb-3 fw-bold">Acquire and share knowledge</h3>
+
+                    </div>
+                </div>
+            </div><!-- end col-lg-3 -->
+        </div>
+    </div>
+</section>
+<!-- ================================
+         END CTA AREA
+================================= -->
+
+<!-- ================================
+         START CTA AREA
+================================= -->
+<section class="get-started-area pt-70px pb-70px bg-gray position-relative z-index-1">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 py-4">
+                <h1 class="section-title fs-27 lh-40">Empower your development journey with our platform designed exclusively for developers, and unleash your coding potential like never before.</h1>
+            </div>
+           </div>
+    </div><!-- end container -->
+</section>
+<!-- ================================
+         END CTA AREA
+================================= -->
+
+<!-- ================================
+         END FOOTER AREA
+================================= -->
+<section class="footer-area pt-80px bg-dark position-relative">
+    <span class="vertical-bar-shape vertical-bar-shape-1"></span>
+    <span class="vertical-bar-shape vertical-bar-shape-2"></span>
+    <span class="vertical-bar-shape vertical-bar-shape-3"></span>
+    <span class="vertical-bar-shape vertical-bar-shape-4"></span>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 responsive-column-half">
+                <div class="footer-item">
+                    <h3 class="fs-18 fw-bold pb-2 text-white">Legal Stuff</h3>
+                    <ul class="generic-list-item generic-list-item-hover-underline pt-3 generic-list-item-white">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-and-conditions.html">Terms of Service</a></li>
+                        <li><a href="privacy-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div><!-- end footer-item -->
+            </div><!-- end col-lg-3 -->
+            <div class="col-lg-3 responsive-column-half">
+                <div class="footer-item">
+                    <h3 class="fs-18 fw-bold pb-2 text-white">Help</h3>
+                    <ul class="generic-list-item generic-list-item-hover-underline pt-3 generic-list-item-white">
+                        <li><a href="faq.html">Knowledge Base</a></li>
+                        <li><a href="contact.html">Support</a></li>
+                    </ul>
+                </div><!-- end footer-item -->
+            </div><!-- end col-lg-3 -->
+            <div class="col-lg-3 responsive-column-half">
+                <div class="footer-item">
+                    <h3 class="fs-18 fw-bold pb-2 text-white">Connect with us</h3>
+                    <ul class="generic-list-item generic-list-item-hover-underline pt-3 generic-list-item-white">
+                        <li><a href="#"><i class="la la-facebook mr-1"></i> Facebook</a></li>
+                        <li><a href="#"><i class="la la-twitter mr-1"></i> Twitter</a></li>
+                        <li><a href="#"><i class="la la-linkedin mr-1"></i> LinkedIn</a></li>
+                        <li><a href="#"><i class="la la-instagram mr-1"></i> Instagram</a></li>
+                    </ul>
+                </div><!-- end footer-item -->
+            </div><!-- end col-lg-3 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+    <hr class="border-top-gray my-5">
+    <div class="container">
+        <div class="row align-items-center pb-4 copyright-wrap">
+            <div class="col-lg-6">
+                <a href="index.html" class="d-inline-block">
+                    <img src="assets/images/logo-white.png" alt="footer logo" class=" Logos footer-logo">
+                </a>
+            </div><!-- end col-lg-6 -->
+
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end footer-area -->
+<!-- ================================
+          END FOOTER AREA
+================================= -->
+
+<!-- start back to top -->
+<div id="back-to-top" data-toggle="tooltip" data-placement="top" title="Return to top">
+    <i class="la la-arrow-up"></i>
+</div>
+<!-- end back to top -->
+
+<!-- Modal -->
+<div class="modal fade modal-container login-form" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header align-items-center">
+                <h5 class="modal-title" id="loginModalTitle">Good to see you again!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="la la-times"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post">
+                    <div class="form-group">
+                        <label class="fs-14 text-black fw-medium lh-18">Email</label>
+                        <input class="form-control form--control" type="email" name="email" placeholder="Email address">
+                    </div>
+                    <div class="form-group">
+                        <label class="fs-14 text-black fw-medium lh-18">Password</label>
+                        <div class="input-group mb-1">
+                            <input class="form-control form--control password-field" type="password" name="password" placeholder="Enter password">
+                            <div class="input-group-append">
+                                <button class="btn theme-btn-outline theme-btn-outline-gray toggle-password" type="button">
+                                    <svg class="eye-on" xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 0 24 24" width="22px" fill="#7f8897"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 6c3.79 0 7.17 2.13 8.82 5.5C19.17 14.87 15.79 17 12 17s-7.17-2.13-8.82-5.5C4.83 8.13 8.21 6 12 6m0-2C7 4 2.73 7.11 1 11.5 2.73 15.89 7 19 12 19s9.27-3.11 11-7.5C21.27 7.11 17 4 12 4zm0 5c1.38 0 2.5 1.12 2.5 2.5S13.38 14 12 14s-2.5-1.12-2.5-2.5S10.62 9 12 9m0-2c-2.48 0-4.5 2.02-4.5 4.5S9.52 16 12 16s4.5-2.02 4.5-4.5S14.48 7 12 7z"/></svg>
+                                    <svg class="eye-off" xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 0 24 24" width="22px" fill="#7f8897"><path d="M0 0h24v24H0V0zm0 0h24v24H0V0zm0 0h24v24H0V0zm0 0h24v24H0V0z" fill="none"/><path d="M12 6c3.79 0 7.17 2.13 8.82 5.5-.59 1.22-1.42 2.27-2.41 3.12l1.41 1.41c1.39-1.23 2.49-2.77 3.18-4.53C21.27 7.11 17 4 12 4c-1.27 0-2.49.2-3.64.57l1.65 1.65C10.66 6.09 11.32 6 12 6zm-1.07 1.14L13 9.21c.57.25 1.03.71 1.28 1.28l2.07 2.07c.08-.34.14-.7.14-1.07C16.5 9.01 14.48 7 12 7c-.37 0-.72.05-1.07.14zM2.01 3.87l2.68 2.68C3.06 7.83 1.77 9.53 1 11.5 2.73 15.89 7 19 12 19c1.52 0 2.98-.29 4.32-.82l3.42 3.42 1.41-1.41L3.42 2.45 2.01 3.87zm7.5 7.5l2.61 2.61c-.04.01-.08.02-.12.02-1.38 0-2.5-1.12-2.5-2.5 0-.05.01-.08.01-.13zm-3.4-3.4l1.75 1.75c-.23.55-.36 1.15-.36 1.78 0 2.48 2.02 4.5 4.5 4.5.63 0 1.23-.13 1.77-.36l.98.98c-.88.24-1.8.38-2.75.38-3.79 0-7.17-2.13-8.82-5.5.7-1.43 1.72-2.61 2.93-3.53z"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group d-flex align-items-center justify-content-between">
+                        <div class="custom-control custom-checkbox fs-14">
+                            <input type="checkbox" class="custom-control-input" id="rememberMe">
+                            <label class="custom-control-label custom--control-label" for="rememberMe">Remember me!</label>
+                        </div>
+                        <a href="javascript:void(0)" class="lost-pass-btn fs-14 hover-underline">Forgot Password?</a>
+                    </div>
+                    <div class="btn-box">
+                        <button type="submit" class="btn theme-btn w-100">
+                            Login to Account <i class="la la-arrow-right icon ml-1"></i>
+                        </button>
+                    </div>
+                    <p class="create-account-text text-right fs-14 pt-1">
+                        New to disilab? <a class="signup-btn text-color hover-underline" href="javascript:void(0)">Create account</a>
+                    </p>
+                    <div class="icon-element my-4 mx-auto shadow-sm fs-25">Or</div>
+                    <div class="text-center">
+                        <p class="fs-15 pb-3">Login with your social network</p>
+                        <button class="btn theme-btn bg-8 mb-2 mr-2"><i class="la la-facebook mr-1"></i> Facebook</button>
+                        <button class="btn theme-btn bg-9 mb-2 mr-2"><i class="la la-twitter mr-1"></i> Twitter</button>
+                        <button class="btn theme-btn bg-10 mb-2 mr-2"><i class="la la-google mr-1"></i> Google</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade modal-container signup-form" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header align-items-center">
+                <h5 class="modal-title" id="signUpModalTitle">Welcome! create your account</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="la la-times"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post">
+                    <div class="form-group">
+                        <label class="fs-14 text-black fw-medium lh-18">Name</label>
+                        <input class="form-control form--control" type="text" name="text" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label class="fs-14 text-black fw-medium lh-18">Email</label>
+                        <input class="form-control form--control" type="email" name="email" placeholder="Email address">
+                    </div>
+                    <div class="form-group">
+                        <label class="fs-14 text-black fw-medium lh-18">Password</label>
+                        <div class="input-group mb-1">
+                            <input class="form-control form--control password-field" type="password" name="password" placeholder="Enter password">
+                            <div class="input-group-append">
+                                <button class="btn theme-btn-outline theme-btn-outline-gray toggle-password" type="button">
+                                    <svg class="eye-on" xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 0 24 24" width="22px" fill="#7f8897"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 6c3.79 0 7.17 2.13 8.82 5.5C19.17 14.87 15.79 17 12 17s-7.17-2.13-8.82-5.5C4.83 8.13 8.21 6 12 6m0-2C7 4 2.73 7.11 1 11.5 2.73 15.89 7 19 12 19s9.27-3.11 11-7.5C21.27 7.11 17 4 12 4zm0 5c1.38 0 2.5 1.12 2.5 2.5S13.38 14 12 14s-2.5-1.12-2.5-2.5S10.62 9 12 9m0-2c-2.48 0-4.5 2.02-4.5 4.5S9.52 16 12 16s4.5-2.02 4.5-4.5S14.48 7 12 7z"/></svg>
+                                    <svg class="eye-off" xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 0 24 24" width="22px" fill="#7f8897"><path d="M0 0h24v24H0V0zm0 0h24v24H0V0zm0 0h24v24H0V0zm0 0h24v24H0V0z" fill="none"/><path d="M12 6c3.79 0 7.17 2.13 8.82 5.5-.59 1.22-1.42 2.27-2.41 3.12l1.41 1.41c1.39-1.23 2.49-2.77 3.18-4.53C21.27 7.11 17 4 12 4c-1.27 0-2.49.2-3.64.57l1.65 1.65C10.66 6.09 11.32 6 12 6zm-1.07 1.14L13 9.21c.57.25 1.03.71 1.28 1.28l2.07 2.07c.08-.34.14-.7.14-1.07C16.5 9.01 14.48 7 12 7c-.37 0-.72.05-1.07.14zM2.01 3.87l2.68 2.68C3.06 7.83 1.77 9.53 1 11.5 2.73 15.89 7 19 12 19c1.52 0 2.98-.29 4.32-.82l3.42 3.42 1.41-1.41L3.42 2.45 2.01 3.87zm7.5 7.5l2.61 2.61c-.04.01-.08.02-.12.02-1.38 0-2.5-1.12-2.5-2.5 0-.05.01-.08.01-.13zm-3.4-3.4l1.75 1.75c-.23.55-.36 1.15-.36 1.78 0 2.48 2.02 4.5 4.5 4.5.63 0 1.23-.13 1.77-.36l.98.98c-.88.24-1.8.38-2.75.38-3.79 0-7.17-2.13-8.82-5.5.7-1.43 1.72-2.61 2.93-3.53z"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="fs-14 lh-20">Your password must be at least 6 characters long and must contain letters, numbers and special characters. Cannot contain whitespace.</p>
+                    </div>
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox fs-14">
+                            <input type="checkbox" class="custom-control-input" id="agreeCheckBox">
+                            <label class="custom-control-label custom--control-label" for="agreeCheckBox">By signing up, you agree to our <a href="privacy-policy.html" class="text-color hover-underline">Privacy Policy.</a></label>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <button type="submit" class="btn theme-btn w-100">
+                            Register Account <i class="la la-arrow-right icon ml-1"></i>
+                        </button>
+                    </div>
+                    <p class="create-account-text text-right fs-14">
+                        Already on Snag Solving? <a class="login-btn text-color hover-underline" href="javascript:void(0)">Log in</a>
+                    </p>
+                    <div class="icon-element my-4 mx-auto shadow-sm fs-25">Or</div>
+                    <div class="text-center">
+                        <p class="fs-15 pb-3">Create account with your social network</p>
+                        <button class="btn theme-btn bg-8 mb-2 mr-2"><i class="la la-facebook mr-1"></i> Facebook</button>
+                        <button class="btn theme-btn bg-9 mb-2 mr-2"><i class="la la-twitter mr-1"></i> Twitter</button>
+                        <button class="btn theme-btn bg-10 mb-2 mr-2"><i class="la la-google mr-1"></i> Google</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade modal-container recover-form" id="recoverModal" tabindex="-1" role="dialog" aria-labelledby="recoverModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header align-items-center">
+                <h5 class="modal-title" id="recoverModalTitle">Reset password</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="la la-times"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="fs-15 lh-20 pb-3">
+                    Enter your username or email to reset your password.
+                    You will receive an email with instructions on how to reset your password. If you are experiencing problems
+                    resetting your password <a href="contact.html" class="text-color hover-underline">contact us</a> or <a href="#" class="text-color hover-underline">send us an email</a>
+                </p>
+                <form method="post">
+                    <div class="form-group">
+                        <label class="fs-14 text-black fw-medium lh-18">Email</label>
+                        <input class="form-control form--control" type="text" name="text" placeholder="Email address">
+                    </div>
+                    <div class="btn-box">
+                        <button type="submit" class="btn theme-btn w-100">
+                            Get New Password <i class="la la-arrow-right icon ml-1"></i>
+                        </button>
+                        <p class="create-account-text text-right fs-14">
+                            Not a member? <a class="text-color signup-btn hover-underline" href="javascript:void(0)">Create account</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

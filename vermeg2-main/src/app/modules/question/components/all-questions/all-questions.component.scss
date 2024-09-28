@@ -1,0 +1,198 @@
+.filter-option-box {
+  width: 20%; /* Ajusté pour utiliser % plutôt que 'w-20' qui n'est pas standard */
+  margin: 0 auto; /* Centre la boîte si nécessaire */
+}
+
+.select-container {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc; /* Bordure légère */
+  border-radius: 5px; /* Bords arrondis */
+  background-color: white;
+  outline: none; /* Supprime le contour par défaut lors de la focalisation */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Transition douce pour toutes les modifications */
+}
+
+.select-container:hover {
+  border-color: #007BFF; /* Changement de couleur lors du survol */
+  box-shadow: 0 0 8px rgba(0,123,255,0.2); /* Légère ombre portée pour le survol */
+}
+
+.select-container:focus {
+  box-shadow: 0 0 10px rgba(0,123,255,0.5); /* Ombre plus intense lors de la focalisation */
+}
+
+.user-info {
+  display: flex;
+  align-items: center; /* Centre les éléments verticalement */
+  justify-content: flex-start; /* Alignement horizontal à gauche */
+}
+
+.username {
+  margin-left: 8px; /* Ajoute un peu d'espace entre l'icône et le texte */
+}
+.questions-snippet {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.media-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.username {
+  display: block;
+  font-weight: bold;
+}
+
+.media-date {
+  font-size: 0.85rem;
+}
+
+.media-body {
+  overflow: hidden;
+}
+
+.faq-icon {
+  cursor: pointer;
+  display: block; /* Assure que l'icône est sur une nouvelle ligne */
+  margin-top: 10px;
+  width: 24px; /* Taille de l'icône */
+}
+
+.faq-icon:hover {
+  opacity: 0.8;
+}
+
+.answers {
+  margin-top: 10px;
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+
+.answer {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.answer-header {
+  display: flex;
+  align-items: center;
+}
+.date-text, .username-text {
+  margin-left: 20px; /* Ajustez la valeur selon vos besoins */
+}
+.approve-counter {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.approve-number {
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.arrow-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.verify-icon {
+  display: block;
+  margin-top: 5px;
+}
+
+.small {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+
+.tag-link {
+  background-color: #eee;
+  padding: 2px 8px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 0.9rem;
+}
+
+
+
+
+.Logos {
+  width: 200px; /* Ajustez la largeur en fonction de votre préférence */
+  height: auto; /* Permet de conserver les proportions de l'image */
+  display: block;
+  margin: 0 auto;
+  /* Autres styles spécifiques à "Logos" */
+}
+.footer-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-item h3 {
+  flex-basis: 100%;
+  text-align: center;
+   color:#000;
+}
+
+.footer-item ul {
+  flex-basis: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+   color:#000;
+}
+
+.footer-item li {
+  margin: 10px;
+   color:#000;
+}
+.footer-item a {
+  color:#000;
+}
+
+.Logos {
+  width: 200px; /* Ajustez la largeur en fonction de votre préférence */
+  height: auto; /* Permet de conserver les proportions de l'image */
+  display: block;
+  margin: 0 auto;
+  /* Autres styles spécifiques à "Logos" */
+}
+.text-black {
+     color: #0d233e;}
+.ul {
+         margin-left: 200px;
+     }
+
+
+     .user-avatar-trigger {
+
+      margin-right: 0.5rem;
+    }
+
+    .user-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #5086ec;
+      color: #fff;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0.5rem;
+    }
+
+
+

@@ -1,0 +1,21 @@
+
+.Logos {
+  width: 200px; /* Ajustez la largeur en fonction de votre préférence */
+  height: auto; /* Permet de conserver les proportions de l'image */
+  display: block;
+  margin: 0 auto;
+  /* Autres styles spécifiques à "Logos" */
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #5086ec;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+}

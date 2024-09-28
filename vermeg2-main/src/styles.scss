@@ -1,0 +1,56 @@
+
+// variable scss
+@import "assets/styles/variables";
+
+// mixin scss
+@import "assets/styles/mixins";
+// common scss
+@import "assets/styles/common";
+// button scss
+@import "assets/styles/button";
+// keyframes scss
+@import "assets/styles/keyframes";
+// file-upload scss
+@import "assets/styles/file-upload";
+// modal scss
+@import "assets/styles/modal";
+// comments scss
+@import "assets/styles/comments";
+// call-to-action scss
+@import "assets/styles/call-to-action";
+// contact scss
+@import "assets/styles/contact";
+// info-box scss
+@import "assets/styles/info-box";
+// collapse scss
+@import "assets/styles/collapse";
+// progress-bar scss
+@import "assets/styles/progress-bar";
+// icon-element scss
+@import "assets/styles/icon-element";
+// table scss
+@import "assets/styles/table";
+// cards scss
+@import "assets/styles/cards";
+// custom scss
+@import "assets/styles/custom";
+// tab scss
+@import "assets/styles/tab";
+// header scss
+@import "assets/styles/header";
+// hero scss
+@import "assets/styles/hero";
+// footer scss
+@import "assets/styles/footer";
+
+
+
+@import './assets/css/style.css';
+@import './assets/css/bootstrap-rtl.min.css';
+@import './assets/css/bootstrap.min.css';
+@import './assets/css/style-rtl.css';
+@import './assets/css/selectize.css';
+@import './assets/css/line-awesome.css';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

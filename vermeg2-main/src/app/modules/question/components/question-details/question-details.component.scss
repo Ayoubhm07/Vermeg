@@ -1,0 +1,81 @@
+
+.Logos {
+  width: 200px; /* Ajustez la largeur en fonction de votre préférence */
+  height: auto; /* Permet de conserver les proportions de l'image */
+  display: block;
+  margin: 0 auto;
+  /* Autres styles spécifiques à "Logos" */
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espaces entre les éléments */
+}
+
+.username {
+  margin: 0; /* Enlève la marge par défaut du h1 */
+  font-size: 1.5rem; /* Ajustez la taille de police selon vos besoins */
+  flex-grow: 1; /* Permet au nom de prendre l'espace nécessaire */
+}
+
+.date {
+  margin: 0; /* Enlève la marge par défaut du paragraphe */
+  font-size: 1rem; /* Ajustez la taille de police selon vos besoins */
+}
+
+.descripition {
+  margin-top: 1rem; /* Espacement au-dessus de la description */
+  font-size: 1rem; /* Ajustez la taille de police selon vos besoins */
+}
+
+
+     .user-avatar-trigger {
+
+      margin-right: 0.5rem;
+    }
+
+    .user-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #5086ec;
+      color: #fff;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0.5rem;
+    }
+
+    .flexed {
+      display: flex;
+      align-items: end;
+    }
+
+    .media-body h5 {
+      font-size: 1.25rem; /* Taille de police pour le nom */
+  }
+
+  .media-body p {
+      font-size: 1rem; /* Taille de police pour la description */
+  }
+  .question-details {
+    background: #f8f8f8;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #000; /* Assurez que le texte est noir */
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+.question-date {
+    margin-top: 1rem;
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+/* Correction de la classe pour 'description' */
+.description {
+    margin-top: 1rem; /* Espacement au-dessus de la description */
+    font-size: 1rem; /* Ajustez la taille de police selon vos besoins */
+    color: #000; /* Assurez que le texte est noir */
+}
+
